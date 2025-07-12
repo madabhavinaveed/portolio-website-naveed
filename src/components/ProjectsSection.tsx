@@ -6,57 +6,63 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution built with React, Node.js, and PostgreSQL. Features include user authentication, payment processing, and admin dashboard.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
+      title: "XSPOC Production Optimization",
+      description: "Lead frontend development for production optimization project focused on diagnosing anomalies in artificially-lifted wells. Built interactive, data-rich interfaces with advanced visualizations.",
+      technologies: ["React.js", "AmCharts 5", "DataTables", "CodeAI", "REST APIs"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, file sharing, and team collaboration features.",
-      technologies: ["React", "Firebase", "Material-UI", "WebSockets"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather dashboard that provides detailed weather information and forecasts using OpenWeather API.",
-      technologies: ["Vue.js", "TypeScript", "Chart.js", "PWA"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      title: "AI Chat Assistant",
-      description: "An intelligent chat assistant powered by AI, featuring natural language processing and context-aware responses.",
-      technologies: ["React", "Python", "OpenAI API", "FastAPI", "Docker"],
+      title: "Healthcare & Clinical Research Platform",
+      description: "Developed responsive interfaces for healthcare and clinical research applications with real-time datatables and reporting dashboards.",
+      technologies: ["Vue.js", "React.js", "SCSS", "Node.js", ".NET"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
+    },
+    {
+      title: "Crypto Exchange & Wallet Platform",
+      description: "Built secure UI components for crypto exchanges, digital wallets, and ICO platforms including Bitcron with support for 50+ cryptocurrencies.",
+      technologies: ["Vue.js", "React.js", "Angular", "Web3", "Smart Contracts"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: true
+    },
+    {
+      title: "E-commerce Platforms (M2 Apparel, Hoffner)",
+      description: "Developed and customized e-commerce platforms using WordPress, Shopify, and OpenCart with responsive design and secure checkout flows.",
+      technologies: ["WordPress", "Shopify", "OpenCart", "AngularJS", "Java"],
+      liveUrl: "#",
+      githubUrl: "#",
+      featured: false
     }
   ];
 
   const workExperience = [
     {
-      company: "TechCorp Solutions",
-      position: "Senior Frontend Developer",
-      period: "2022 - Present",
-      description: "Leading frontend development for enterprise applications, mentoring junior developers, and implementing modern React architectures."
+      company: "OTS Consulting Services LLP",
+      position: "Senior Software Developer (Frontend)",
+      period: "May 2023 - June 2025",
+      description: "Lead frontend development for XSPOC production optimization project. Built interactive interfaces using React.js and advanced visualizations with AmCharts 5. Provided technical leadership and code reviews."
     },
     {
-      company: "StartupXYZ",
-      position: "Full Stack Developer",
-      period: "2020 - 2022",
-      description: "Built and maintained web applications from concept to deployment, working closely with design and product teams."
+      company: "Orangebits Software Technologies",
+      position: "Software Developer",
+      period: "Jul 2021 - April 2023",
+      description: "Developed responsive interfaces using Vue.js and React.js for healthcare, clinical research, and DeFi applications. Implemented dynamic components and reporting dashboards."
     },
     {
-      company: "Digital Agency Pro",
-      position: "Frontend Developer",
-      period: "2019 - 2020",
-      description: "Developed responsive websites and web applications for various clients across different industries."
+      company: "Crontech LLC",
+      position: "Software Engineer",
+      period: "Dec 2018 - Jun 2021",
+      description: "Built frontend interfaces for crypto exchanges, wallets, and ICO platforms. Created secure UI components for blockchain-based applications with multi-currency support."
+    },
+    {
+      company: "PRCV Soft",
+      position: "Junior Software Engineer", 
+      period: "July 2016 - Nov 2018",
+      description: "Developed e-commerce platforms using WordPress, Shopify, and OpenCart. Built BoloCab ride-booking platform using AngularJS with real-time booking features."
     }
   ];
 

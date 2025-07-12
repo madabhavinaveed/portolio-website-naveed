@@ -14,28 +14,34 @@ const BioSection = () => {
             
             <div className="space-y-4 text-muted-foreground leading-relaxed">
               <p>
-                I am a passionate full-stack developer who loves creating beautiful, functional web applications. 
-                Besides developing awesome stuff, I love spending time exploring new technologies, traveling, 
-                and anything that is tech-related.
+                I am an accomplished Senior Software Developer with over 8 years of experience in front-end software
+                development across diverse domains including <strong>Fintech, Blockchain, Healthcare, E-commerce, and IoT</strong>.
+                Currently based in Nürnberg, Germany, I'm passionate about creating scalable and maintainable applications.
               </p>
               
               <p>
-                I enjoy drinking coffee <Coffee className="inline w-4 h-4 mx-1" /> and building things that make a difference. 
-                I have a soft spot for clean code, modern frameworks, and innovative solutions that solve real-world problems.
+                Expert in working in Agile and Scrum environments, I actively participate in all agile ceremonies 
+                from refinement and sprint planning to daily scrums and sprint reviews. I love drinking coffee <Coffee className="inline w-4 h-4 mx-1" /> 
+                and building innovative solutions using modern JavaScript frameworks.
+              </p>
+
+              <p>
+                My expertise spans across <strong>React.js, Vue.js, Angular.js, Node.js</strong>, and I have extensive experience 
+                with cloud infrastructure (AWS), DevOps practices, and blockchain technologies including Web3 and smart contracts.
               </p>
               
               <p className="font-medium text-primary flex items-center gap-2">
-                #developer <Heart className="w-4 h-4 text-red-500" /> #creative #geek🤓
+                #SeniorDeveloper <Heart className="w-4 h-4 text-red-500" /> #Frontend #Blockchain #Agile
               </p>
               
               <p>
-                I feel fortunate and grateful to say that I have finally found a career and community 
-                that I'm super excited to be a part of. I love what I do and hope to be able to keep 
-                on learning and growing as a professional developer.
+                I feel fortunate to have built a career spanning multiple cutting-edge technologies, from traditional 
+                e-commerce platforms to revolutionary blockchain applications. I'm always eager to take on new challenges 
+                and mentor fellow developers in their growth journey.
               </p>
               
               <p>
-                If you are interested in my professional journey, feel free to check out my CV.
+                Available immediately for new opportunities. Feel free to check out my professional journey and connect with me.
               </p>
             </div>
 
@@ -44,8 +50,8 @@ const BioSection = () => {
               size="lg"
               asChild
             >
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                View CV 
+              <a href="https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/" target="_blank" rel="noopener noreferrer">
+                View LinkedIn Profile 
                 <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -60,10 +66,10 @@ const BioSection = () => {
                     <div className="text-4xl">💻</div>
                   </div>
                   <h3 className="text-xl font-semibold text-foreground">
-                    Always Learning
+                    8+ Years Experience
                   </h3>
                   <p className="text-muted-foreground text-sm">
-                    Passionate about new technologies and continuous improvement
+                    Frontend expertise across Fintech, Blockchain, Healthcare & E-commerce
                   </p>
                 </div>
               </div>
