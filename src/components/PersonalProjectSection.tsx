@@ -67,7 +67,7 @@ const ProjectsSection = () => {
   ];
 
   return (
-    <section className="yellow-section py-20 px-6">
+    <section className="blue-section py-20 px-6">
       <div className="container mx-auto max-w-6xl">
         {/* Projects Header */}
         <div className="text-center mb-16 animate-fade-in">
@@ -75,7 +75,7 @@ const ProjectsSection = () => {
             Projects
           </h2>
           <p className="text-xl text-secondary-foreground/80 max-w-2xl mx-auto">
-            {"-->"} of the professional kind
+            {"-->"} of the personal kind
           </p>
         </div>
 
@@ -108,6 +108,7 @@ Some of the projects I have been a part of during my professional journey as a d
         </div>
       </div>
       </div>
+
     </section>
   );
 };

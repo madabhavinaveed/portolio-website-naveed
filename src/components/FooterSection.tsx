@@ -10,9 +10,9 @@ const FooterSection = () => {
             Let's Connect!
           </h2>
           
-          <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
+          {/* <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
             Senior Software Developer with 8+ years of experience. Available immediately for new opportunities!
-          </p>
+          </p> */}
 
           {/* Contact Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mb-8">
@@ -22,7 +22,7 @@ const FooterSection = () => {
               className="bg-white/20 border-white/30 text-primary-foreground hover:bg-white/30 transition-smooth backdrop-blur-sm group"
               asChild
             >
-              <a href="mailto:naveed.madabhavi786@gmail.com">
+              <a href="mailto:madabhavinaveed@gmail.com">
                 <Mail className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 Email Me
               </a>
@@ -34,7 +34,7 @@ const FooterSection = () => {
               className="bg-white/20 border-white/30 text-primary-foreground hover:bg-white/30 transition-smooth backdrop-blur-sm group"
               asChild
             >
-              <a href="https://github.com/naveed" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/madabhavinaveed" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 GitHub
               </a>
@@ -62,7 +62,7 @@ const FooterSection = () => {
               Made with <Heart className="w-4 h-4 text-red-400 animate-pulse" /> and lots of coffee ☕
             </p>
             <p className="text-xs">
-              © 2024 Naveed Madabhavi. All rights reserved.
+              © 2025 Naveed Madabhavi. All rights reserved.
             </p>
           </div>
         </div>

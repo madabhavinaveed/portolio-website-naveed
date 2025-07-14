@@ -66,22 +66,6 @@ const SkillsSection = () => {
             </Card>
           ))}
         </div>
-
-        {/* Additional Highlights */}
-        <div className="mt-16 grid md:grid-cols-3 gap-6">
-          <div className="text-center p-6 section-card animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="text-3xl font-bold text-primary mb-2">8+</div>
-            <div className="text-muted-foreground">Years Experience</div>
-          </div>
-          <div className="text-center p-6 section-card animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <div className="text-3xl font-bold text-primary mb-2">5+</div>
-            <div className="text-muted-foreground">Industry Domains</div>
-          </div>
-          <div className="text-center p-6 section-card animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <div className="text-3xl font-bold text-primary mb-2">50+</div>
-            <div className="text-muted-foreground">Projects Delivered</div>
-          </div>
-        </div>
       </div>
     </section>
   );

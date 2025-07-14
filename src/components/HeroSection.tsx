@@ -1,6 +1,6 @@
 import { Github, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import profilePhoto from "@/assets/profile-photo.jpg";
+import profilePhoto from "@/assets/profile-photo.png";
 
 const HeroSection = () => {
   const scrollToNext = () => {
@@ -25,11 +25,11 @@ const HeroSection = () => {
         {/* Main Content Card */}
         <div className="section-card max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
           <h1 className="text-4xl md:text-5xl font-bold text-card-foreground mb-6">
-            ¡HOLA! I'M <span className="bg-gradient-primary bg-clip-text text-transparent">NAVEED</span> & I LOVE TO CODE!
+            HELLO! I'M <span className="bg-gradient-primary bg-clip-text text-transparent">NAVEED</span> & I LOVE TO CODE!
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Senior Software Developer with 8+ years of experience in Frontend Development across Fintech, Blockchain, Healthcare & E-commerce.
+           Feel free to continue reading to learn more about me, or check out my social media profiles for further updates.
           </p>
 
           {/* Social Media Links */}
@@ -40,7 +40,7 @@ const HeroSection = () => {
               className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
               asChild
             >
-              <a href="https://github.com/naveed" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/madabhavinaveed" target="_blank" rel="noopener noreferrer">
                 <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 GitHub
               </a>

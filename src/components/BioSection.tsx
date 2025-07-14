@@ -4,88 +4,61 @@ import { ExternalLink, Heart, Coffee } from "lucide-react";
 const BioSection = () => {
   return (
     <section id="bio" className="py-20 px-6 bg-background">
-      <div className="container mx-auto max-w-4xl">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          {/* Bio Content */}
-          <div className="space-y-6 animate-fade-in">
-            <h2 className="text-3xl font-bold text-foreground mb-6">
-              Bio
-            </h2>
-            
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                I am an accomplished Senior Software Developer with over 8 years of experience in front-end software
-                development across diverse domains including <strong>Fintech, Blockchain, Healthcare, E-commerce, and IoT</strong>.
-                Currently based in Nürnberg, Germany, I'm passionate about creating scalable and maintainable applications.
-              </p>
-              
-              <p>
-                Expert in working in Agile and Scrum environments, I actively participate in all agile ceremonies 
-                from refinement and sprint planning to daily scrums and sprint reviews. I love drinking coffee <Coffee className="inline w-4 h-4 mx-1" /> 
-                and building innovative solutions using modern JavaScript frameworks.
-              </p>
-
-              <p>
-                My expertise spans across <strong>React.js, Vue.js, Angular.js, Node.js</strong>, and I have extensive experience 
-                with cloud infrastructure (AWS), DevOps practices, and blockchain technologies including Web3 and smart contracts.
-              </p>
-              
-              <p className="font-medium text-primary flex items-center gap-2">
-                #SeniorDeveloper <Heart className="w-4 h-4 text-red-500" /> #Frontend #Blockchain #Agile
-              </p>
-              
-              <p>
-                I feel fortunate to have built a career spanning multiple cutting-edge technologies, from traditional 
-                e-commerce platforms to revolutionary blockchain applications. I'm always eager to take on new challenges 
-                and mentor fellow developers in their growth journey.
-              </p>
-              
-              <p>
-                Available immediately for new opportunities. Feel free to check out my professional journey and connect with me.
-              </p>
-            </div>
-
-            <Button 
-              className="gradient-primary text-primary-foreground hover:shadow-glow transition-all duration-300 group"
-              size="lg"
-              asChild
-            >
-              <a href="https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/" target="_blank" rel="noopener noreferrer">
-                View LinkedIn Profile 
-                <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </a>
-            </Button>
+    <div className="container mx-auto max-w-5xl">
+      <div
+        className="grid md:grid-cols-[1fr_auto] gap-12  items-center justify-center text-center"
+       
+      >
+        {/* Bio Content */}
+        <div className="space-y-6 animate-fade-in">
+          <h2 className="text-3xl font-bold text-foreground mb-6">Bio</h2>
+  
+          <div className="space-y-4 text-muted-foreground leading-relaxed"  style={{ textAlign: 'justify' }}>
+            <p>
+              I’m an Indian developer who recently moved to Germany, and I’m beyond excited to be shaping my career here. Programming has always been my passion, and I’m dedicated to writing clean, efficient code that not only solves problems but also stands the test of time.
+            </p>
+  
+            <p>
+              Beyond coding, I love to travel, read, and immerse myself in the tech community. Whether it's attending meet-ups or staying current with the latest trends at conferences, I’m constantly learning and evolving. Weekends are often spent with friends, enjoying coffee, exploring new places, or diving into the latest tech advancements.
+            </p>
+  
+            <p>
+              I also have a special place in my heart for kids and believe that tech can play a big role in education and social impact. It's incredible how, even from the comfort of our own homes, we as developers can contribute to creating a positive difference in society.
+            </p>
+  
+            <p>
+              I feel truly fortunate to be part of a community that is not only passionate about technology but also focused on making meaningful contributions to the world. I’m excited to continue learning and growing while striving to make a lasting impact.
+            </p>
+  
+            <p>
+              If you’d like to learn more about my professional journey, feel free to check out my CV!
+            </p>
           </div>
-
-          {/* Decorative Image/Illustration */}
-          <div className="animate-scale-in" style={{ animationDelay: '0.3s' }}>
-            <div className="relative">
-              <div className="section-card p-8 bg-gradient-to-br from-primary/10 to-accent/10">
-                <div className="text-center space-y-4">
-                  <div className="w-32 h-32 mx-auto bg-gradient-primary rounded-2xl flex items-center justify-center shadow-glow">
-                    <div className="text-4xl">💻</div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground">
-                    8+ Years Experience
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    Frontend expertise across Fintech, Blockchain, Healthcare & E-commerce
-                  </p>
-                </div>
-              </div>
-              
-              {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 w-12 h-12 bg-secondary rounded-full flex items-center justify-center shadow-elegant">
-                <span className="text-lg">⚡</span>
-              </div>
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-accent/20 rounded-full flex items-center justify-center backdrop-blur-sm">
-                <span className="text-xl">🚀</span>
-              </div>
-            </div>
+  
+          <Button
+            className="gradient-primary text-primary-foreground hover:shadow-glow transition-all duration-300 group mx-auto"
+            size="lg"
+            asChild
+            style={{ alignContent: 'right' }}
+          >
+            <a href="https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/" target="_blank" rel="noopener noreferrer">
+              View LinkedIn Profile
+              <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </a>
+          </Button>
+        </div>
+  
+        {/* Decorative Image/Illustration */}
+        <div className="animate-scale-in flex justify-center" style={{ animationDelay: '0.3s' }}>
+          <div className="relative">
+            {/* Place your image or illustration here */}
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+  
+  
   );
 };
 

@@ -1,7 +1,8 @@
 import HeroSection from "@/components/HeroSection";
 import BioSection from "@/components/BioSection";
-import SkillsSection from "@/components/SkillsSection";
+// import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import PersonalProjectSection from "@/components/PersonalProjectSection";
 import FooterSection from "@/components/FooterSection";
 
 const Index = () => {
@@ -9,8 +10,9 @@ const Index = () => {
     <div className="min-h-screen">
       <HeroSection />
       <BioSection />
-      <SkillsSection />
+      {/* <SkillsSection /> */}
       <ProjectsSection />
+      <PersonalProjectSection />
       <FooterSection />
     </div>
   );
