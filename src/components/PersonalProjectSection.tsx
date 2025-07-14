@@ -49,7 +49,13 @@ const ProjectsSection = () => {
       company: "Ongoing Learning & Courses",
       position: "Software Developer",
       period: "Jul 2021 - April 2023",
-      description: "I'm currently taking a Udemy course on Microfrontend Architecture to strengthen my skills in building scalable, modular frontend apps."
+      description: "I'm currently taking a Udemy course on Microfrontend Architecture to strengthen my skills in building scalable, modular frontend apps. :-)"
+    },
+    {
+      company: "German Language",
+      position: "Software Developer",
+      period: "Jul 2021 - April 2023",
+      description: "I am close to complete my german A2 and should be able to start B1 by next month. But yeah german is a very cool language wished I had started learning a bit earlier"
     },
   ];
 
