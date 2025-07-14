@@ -68,47 +68,45 @@ const ProjectsSection = () => {
 
   return (
     <section className="yellow-section py-20 px-6">
-      <div className="container mx-auto max-w-6xl">
-        {/* Projects Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-secondary-foreground mb-4">
-            Projects
-          </h2>
-          <p className="text-xl text-secondary-foreground/80 max-w-2xl mx-auto">
-            {"-->"} of the professional kind
-          </p>
-        </div>
-
-        {/* Work Experience */}
-        <div className="mb-16 animate-scale-in">
-        <div className="section-card bg-card/95 backdrop-blur-sm">
-        <p className="text-muted-foreground">Currently, I work as an app frontend developer at GRID. My team and I are reponsible for maintaining the iOS and Android apps and building new features into it.
-
-Before GRID, I used to work as a frontend developer at Vodafone, the biggest telecommunications company in Europe, where my team and I were in charge of maintaining and developing new features for the online shop.
-
-Before Vodafone, I used to work at a media agency called Parasol Island, where I was able to code various projects for mulitple clients in the consumer goods industry.
-
-Some of the projects I have been a part of during my professional journey as a developer are:</p>
-
-          {/* Grid layout for two columns on medium and up */}
+    <div className="container mx-auto max-w-6xl">
+      {/* Projects Header */}
+      <div className="text-center mb-16 animate-fade-in">
+        <h2 className="text-4xl font-bold text-secondary-foreground mb-4">
+          Projects
+        </h2>
+        <p className="text-xl text-secondary-foreground/80 max-w-2xl mx-auto">
+          {"-->"} of the professional kind
+        </p>
+      </div>
+  
+     {/* Work Experience */}
+     <div className="mb-16 animate-scale-in">
+        <div className="section-card bg-card/95 backdrop-blur-sm px-6 py-8">
+          <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-10">
+          I' am a Senior Developer with 8 years of experience building scalable web applications across both startups and enterprise environments. At OTS, I led development on the XSPOC product, handling over 50% of new module features and reducing security risks using Checkmarx. At OrangeBits, I contributed to frontend improvements focused on performance and stability for a healthcare tech platform.    </p>
+  
+          {/* Work cards in two columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {workExperience.map((job, index) => (
-              <div key={index} className="border-l-4 border-primary pl-6 py-4">
+              <div key={index} className="border-l-4 border-none pl-6 py-4">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                   {/* <h4 className="text-lg font-semibold text-card-foreground">
                     {job.position}
                   </h4> */}
-                 
+                  {/* <Badge variant="secondary" className="w-fit mt-2 md:mt-0">
+                    {job.period}
+                  </Badge> */}
                 </div>
-                <p className="font-medium text-primary mb-2">{job.company}</p>
-                <p className="text-muted-foreground">{job.description}</p>
+                <p className="font-medium text-primary mb-1">@ {job.company}</p>
+                <p className="text-muted-foreground text-sm">{job.description}</p>
               </div>
             ))}
           </div>
         </div>
       </div>
-      </div>
-    </section>
+    </div>
+  </section>
+  
   );
 };
 
