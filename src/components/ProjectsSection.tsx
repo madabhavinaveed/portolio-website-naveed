@@ -82,9 +82,17 @@ const ProjectsSection = () => {
      {/* Work Experience */}
      <div className="mb-16 animate-scale-in">
         <div className="section-card bg-card/95 backdrop-blur-sm px-6 py-8">
-          <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-10">
-          I' am a Senior Developer with 8 years of experience building scalable web applications across both startups and enterprise environments. At OTS, I led development on the XSPOC product, handling over 50% of new module features and reducing security risks using Checkmarx. At OrangeBits, I contributed to frontend improvements focused on performance and stability for a healthcare tech platform.    </p>
-  
+        <div className="text-muted-foreground text-left max-w-3xl mx-auto space-y-2 mb-6">
+  <p className="m-0 mt-2">
+    I am a Senior Developer with 8 years of experience building scalable web applications across both startups and enterprise environments.
+  </p>
+  <p className="m-0 mt-2">
+    At OTS, I led development on the XSPOC product, handling over 50% of new module features and reducing security risks using Checkmarx.
+  </p>
+  <p className="m-0 mt-2">
+    At OrangeBits, I contributed to frontend improvements focused on performance and stability for a healthcare tech platform.
+  </p>
+</div>
           {/* Work cards in two columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {workExperience.map((job, index) => (
