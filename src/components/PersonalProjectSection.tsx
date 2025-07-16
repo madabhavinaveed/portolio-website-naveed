@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import FreelanceProfiles from "./FreelanceProfiles";
 
 const ProjectsSection = () => {
   const projects = [
@@ -98,8 +99,11 @@ const ProjectsSection = () => {
               </div>
             ))}
           </div>
+          <FreelanceProfiles / >
         </div>
+       
       </div>
+     
     </div>
 
     </section>
