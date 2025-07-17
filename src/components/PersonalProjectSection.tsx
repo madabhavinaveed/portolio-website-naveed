@@ -99,7 +99,7 @@ const ProjectsSection = () => {
               </div>
             ))}
           </div>
-          <FreelanceProfiles / >
+          {/* <FreelanceProfiles / > */}
         </div>
        
       </div>
