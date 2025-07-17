@@ -50,13 +50,13 @@ const ProjectsSection = () => {
       company: "Ongoing Learning & Courses",
       position: "Software Developer",
       period: "Jul 2021 - April 2023",
-      description: "I'm currently taking a Udemy course on Microfrontend Architecture to strengthen my skills in building scalable, modular frontend apps. :-)"
+      description: "I'm currently taking a Udemy course on Microfrontend Architecture to strengthen my skills in building scalable, modular frontend apps."
     },
     {
       company: "German Language",
       position: "Software Developer",
       period: "Jul 2021 - April 2023",
-      description: "I am close to complete my german A2 and should be able to start B1 by next month. But yeah german is a very cool language wished I had started learning a bit earlier"
+      description: "I have completed my A1 level german and now learning A2."
     },
   ];
 
@@ -79,13 +79,13 @@ const ProjectsSection = () => {
           {/* <h3 className="text-2xl font-semibold text-card-foreground text-center mb-6">
             Professional Experience
           </h3> */}
-          <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-10">
+          <p className="text-muted-foreground text-left mx-auto">
           I enjoy to code on my free time. Whether it is following a course to learn something new, or to create something fun and even sometimes useful.</p>
   
           {/* Work cards in two columns */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {workExperience.map((job, index) => (
-              <div key={index} className="border-l-4 border-none pl-6 py-4">
+              <div key={index} className="border-l-4 border-none">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                   {/* <h4 className="text-lg font-semibold text-card-foreground">
                     {job.position}
