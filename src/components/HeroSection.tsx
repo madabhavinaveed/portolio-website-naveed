@@ -36,8 +36,8 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-            Feel free to continue reading to learn more about me, or check out
-            my social media profiles for further updates.
+            Continue reading to get to know me better, or follow along on social
+            media for updates.
           </p>
 
           {/* Social Media Links */}
