@@ -66,10 +66,10 @@ const FooterSection = () => {
 
           {/* Footer Text */}
           <div className="text-primary-foreground/80 space-y-2">
-            <p className="flex items-center justify-center gap-2 text-sm">
+            {/* <p className="flex items-center justify-center gap-2 text-sm">
               Made with <Heart className="w-4 h-4 text-red-400 animate-pulse" />{" "}
               and lots of coffee ☕
-            </p>
+            </p> */}
             <p className="text-xs">
               © 2025 Naveed Madabhavi. All rights reserved.
             </p>
