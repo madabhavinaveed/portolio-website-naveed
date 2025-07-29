@@ -32,7 +32,7 @@ const HeroSection = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               NAVEED
             </span>{" "}
-            & I LOVE TO CODE!
+            {/* & I LOVE TO CODE! */}
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">

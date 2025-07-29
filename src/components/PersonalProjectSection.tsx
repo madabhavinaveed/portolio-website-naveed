@@ -120,7 +120,7 @@ const ProjectsSection = () => {
             Professional Experience
           </h3> */}
             <p className="text-muted-foreground text-left mx-auto">
-              I enjoy to code on my free time. Whether it is following a course
+              I enjoy coding on my free time. Whether it is following a course
               to learn something new, or to create something fun and even
               sometimes useful.
             </p>
