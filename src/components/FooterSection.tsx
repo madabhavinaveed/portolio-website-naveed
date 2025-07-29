@@ -9,7 +9,7 @@ const FooterSection = () => {
           <h2 className="text-3xl font-bold text-primary-foreground mb-6">
             Let's Connect!
           </h2>
-          
+
           {/* <p className="text-xl text-primary-foreground/90 mb-8 leading-relaxed">
             Senior Software Developer with 8+ years of experience. Available immediately for new opportunities!
           </p> */}
@@ -27,26 +27,34 @@ const FooterSection = () => {
                 Email Me
               </a>
             </Button>
-            
+
             <Button
               variant="outline"
               size="lg"
               className="bg-white/20 border-white/30 text-primary-foreground hover:bg-white/30 transition-smooth backdrop-blur-sm group"
               asChild
             >
-              <a href="https://github.com/madabhavinaveed" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/madabhavinaveed"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 GitHub
               </a>
             </Button>
-            
+
             <Button
               variant="outline"
               size="lg"
               className="bg-white/20 border-white/30 text-primary-foreground hover:bg-white/30 transition-smooth backdrop-blur-sm group"
               asChild
             >
-              <a href="https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 LinkedIn
               </a>
@@ -59,7 +67,8 @@ const FooterSection = () => {
           {/* Footer Text */}
           <div className="text-primary-foreground/80 space-y-2">
             <p className="flex items-center justify-center gap-2 text-sm">
-              Made with <Heart className="w-4 h-4 text-red-400 animate-pulse" /> and lots of coffee ☕
+              Made with <Heart className="w-4 h-4 text-red-400 animate-pulse" />{" "}
+              and lots of coffee ☕
             </p>
             <p className="text-xs">
               © 2025 Naveed Madabhavi. All rights reserved.
@@ -69,7 +78,10 @@ const FooterSection = () => {
 
         {/* Decorative Elements */}
         <div className="absolute bottom-10 left-10 w-16 h-16 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-20 w-12 h-12 bg-white/5 rounded-full blur-lg animate-pulse" style={{ animationDelay: '1.5s' }}></div>
+        <div
+          className="absolute bottom-20 right-20 w-12 h-12 bg-white/5 rounded-full blur-lg animate-pulse"
+          style={{ animationDelay: "1.5s" }}
+        ></div>
       </div>
     </footer>
   );

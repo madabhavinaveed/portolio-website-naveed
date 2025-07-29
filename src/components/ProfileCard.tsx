@@ -1,4 +1,3 @@
-
 import { ExternalLink, LucideIcon } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,13 +18,21 @@ interface ProfileCardProps {
   description: string;
 }
 
-const ProfileCard = ({ platform, platformColor, profileUrl, stats, description }: ProfileCardProps) => {
+const ProfileCard = ({
+  platform,
+  platformColor,
+  profileUrl,
+  stats,
+  description,
+}: ProfileCardProps) => {
   return (
     <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white">
       <CardHeader className="pb-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className={`w-12 h-12 ${platformColor} rounded-lg flex items-center justify-center text-white font-bold text-lg`}>
+            <div
+              className={`w-12 h-12 ${platformColor} rounded-lg flex items-center justify-center text-white font-bold text-lg`}
+            >
               {platform[0]}
             </div>
             <div>

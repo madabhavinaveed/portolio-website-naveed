@@ -4,8 +4,8 @@ import profilePhoto from "@/assets/profile-photo.png";
 
 const HeroSection = () => {
   const scrollToNext = () => {
-    const nextSection = document.getElementById('bio');
-    nextSection?.scrollIntoView({ behavior: 'smooth' });
+    const nextSection = document.getElementById("bio");
+    nextSection?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -23,13 +23,21 @@ const HeroSection = () => {
         </div>
 
         {/* Main Content Card */}
-        <div className="section-card max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.3s' }}>
+        <div
+          className="section-card max-w-2xl mx-auto animate-fade-in"
+          style={{ animationDelay: "0.3s" }}
+        >
           <h1 className="text-4xl md:text-5xl font-bold text-card-foreground mb-6">
-            HELLO! I'M <span className="bg-gradient-primary bg-clip-text text-transparent">NAVEED</span> & I LOVE TO CODE!
+            HELLO! I'M{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              NAVEED
+            </span>{" "}
+            & I LOVE TO CODE!
           </h1>
-          
+
           <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-           Feel free to continue reading to learn more about me, or check out my social media profiles for further updates.
+            Feel free to continue reading to learn more about me, or check out
+            my social media profiles for further updates.
           </p>
 
           {/* Social Media Links */}
@@ -40,7 +48,11 @@ const HeroSection = () => {
               className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
               asChild
             >
-              <a href="https://github.com/madabhavinaveed" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://github.com/madabhavinaveed"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 GitHub
               </a>
@@ -51,7 +63,11 @@ const HeroSection = () => {
               className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
               asChild
             >
-              <a href="https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 LinkedIn
               </a>
@@ -71,7 +87,10 @@ const HeroSection = () => {
 
       {/* Decorative Elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-white/10 rounded-full blur-xl animate-pulse"></div>
-      <div className="absolute bottom-20 right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+      <div
+        className="absolute bottom-20 right-10 w-32 h-32 bg-white/5 rounded-full blur-2xl animate-pulse"
+        style={{ animationDelay: "1s" }}
+      ></div>
     </section>
   );
 };

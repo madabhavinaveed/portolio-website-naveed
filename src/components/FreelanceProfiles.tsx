@@ -1,5 +1,14 @@
-
-import { ExternalLink, Star, Users, Clock, Award, Facebook, Instagram, Heart, TrendingUp } from "lucide-react";
+import {
+  ExternalLink,
+  Star,
+  Users,
+  Clock,
+  Award,
+  Facebook,
+  Instagram,
+  Heart,
+  TrendingUp,
+} from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -10,8 +19,6 @@ import ReviewsSection from "./ReviewsSection";
 const FreelanceProfiles = () => {
   return (
     <div className="container mx-auto px-4 py-12 space-y-16">
-
-
       {/* Platform Profiles */}
       <div className="grid md:grid-cols-2 gap-8">
         <ProfileCard
@@ -19,21 +26,51 @@ const FreelanceProfiles = () => {
           platformColor="bg-green-500"
           profileUrl="https://www.upwork.com/freelancers/~your-profile"
           stats={[
-            { icon: Star, label: "Rating", value: "5.0", color: "text-yellow-500" },
-            { icon: Users, label: "Clients", value: "50+", color: "text-blue-500" },
-            { icon: Clock, label: "Hours", value: "2000+", color: "text-green-500" }
+            {
+              icon: Star,
+              label: "Rating",
+              value: "5.0",
+              color: "text-yellow-500",
+            },
+            {
+              icon: Users,
+              label: "Clients",
+              value: "50+",
+              color: "text-blue-500",
+            },
+            {
+              icon: Clock,
+              label: "Hours",
+              value: "2000+",
+              color: "text-green-500",
+            },
           ]}
           description="Specialized in web development, UI/UX design, and digital marketing solutions."
         />
-        
+
         <ProfileCard
           platform="Fiverr"
           platformColor="bg-green-400"
           profileUrl="https://www.fiverr.com/your-username"
           stats={[
-            { icon: Star, label: "Rating", value: "4.9", color: "text-yellow-500" },
-            { icon: Users, label: "Orders", value: "200+", color: "text-blue-500" },
-            { icon: Award, label: "Level", value: "Pro", color: "text-purple-500" }
+            {
+              icon: Star,
+              label: "Rating",
+              value: "4.9",
+              color: "text-yellow-500",
+            },
+            {
+              icon: Users,
+              label: "Orders",
+              value: "200+",
+              color: "text-blue-500",
+            },
+            {
+              icon: Award,
+              label: "Level",
+              value: "Pro",
+              color: "text-purple-500",
+            },
           ]}
           description="Offering premium design services, branding solutions, and custom development."
         />
@@ -41,7 +78,6 @@ const FreelanceProfiles = () => {
 
       {/* Social Media Success Section */}
       <div className="space-y-8">
-
         <div className="grid md:grid-cols-2 gap-8">
           {/* Facebook Page */}
           <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg bg-white">
@@ -52,15 +88,27 @@ const FreelanceProfiles = () => {
                     <Facebook className="w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-800">Being Punekar</h3>
-                    <Badge variant="secondary" className="mt-1 bg-blue-100 text-blue-700">Facebook Page</Badge>
+                    <h3 className="text-2xl font-bold text-gray-800">
+                      Being Punekar
+                    </h3>
+                    <Badge
+                      variant="secondary"
+                      className="mt-1 bg-blue-100 text-blue-700"
+                    >
+                      Facebook Page
+                    </Badge>
                   </div>
                 </div>
                 <Button
                   variant="outline"
                   size="sm"
                   className="group-hover:bg-blue-50 group-hover:border-blue-300 transition-colors"
-                  onClick={() => window.open("https://www.facebook.com/beingpunekra", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/beingpunekra",
+                      "_blank"
+                    )
+                  }
                 >
                   <ExternalLink className="w-4 h-4" />
                 </Button>
@@ -77,15 +125,27 @@ const FreelanceProfiles = () => {
                     <Instagram className="w-8 h-8" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-gray-800">Being Punekar</h3>
-                    <Badge variant="secondary" className="mt-1 bg-purple-100 text-purple-700">Instagram Page</Badge>
+                    <h3 className="text-2xl font-bold text-gray-800">
+                      Being Punekar
+                    </h3>
+                    <Badge
+                      variant="secondary"
+                      className="mt-1 bg-purple-100 text-purple-700"
+                    >
+                      Instagram Page
+                    </Badge>
                   </div>
                 </div>
                 <Button
                   variant="outline"
                   size="sm"
                   className="group-hover:bg-purple-50 group-hover:border-purple-300 transition-colors"
-                  onClick={() => window.open("https://www.instagram.com/beingpunekra", "_blank")}
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/beingpunekra",
+                      "_blank"
+                    )
+                  }
                 >
                   <ExternalLink className="w-4 h-4" />
                 </Button>
