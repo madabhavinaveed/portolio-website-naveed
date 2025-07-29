@@ -45,18 +45,31 @@ const ProjectsSection = () => {
       company: "This Website",
       position: "Senior Software Developer (Frontend)",
       period: "May 2023 - June 2025",
-      description: "I built this site to explore React, Gatsby, and Netlify, and plan to integrate Angular and Vue as part of my microfrontend course."  },
+      description: "I built this site to practically explore microfrontends and plan to integrate Angular and Vue as part of my microfrontend course."  },
     {
       company: "Ongoing Learning & Courses",
       position: "Software Developer",
       period: "Jul 2021 - April 2023",
       description: "I'm currently taking a Udemy course on Microfrontend Architecture to strengthen my skills in building scalable, modular frontend apps."
     },
+   
+    {
+      "company": "Freelance (Fiverr)",
+      "position": "Senior Software Developer",
+      "period": "Sep 2020 – Present",
+      "description": "Worked with startups and small businesses on Fiverr to deliver fast, responsive web solutions. Specialized in translating client ideas into functional React, Angular, and Vue applications. Delivered everything from custom UI components to full admin dashboards. Built a reputation for delivering beyond expectations, with strong client reviews highlighting reliability, speed, and code quality."
+    },
+    {
+      company: "Freelance (Upwork)",
+      position: "Software Developer",
+      period: "Sep 2018 – Present",
+      description: "Worked with global clients on web and mobile projects using Angular, React, and React Native. Delivered frontend modules, built scalable app architectures, and translated Figma designs into production-ready code. Maintained a 5★ client rating across multiple projects, praised for clear communication, code quality, and reliability. Specialized in building modular, performance-optimized systems with a strong focus on user experience and scalability."
+    },
     {
       company: "German Language",
       position: "Software Developer",
       period: "Jul 2021 - April 2023",
-      description: "I have completed my A1 level german and now learning A2."
+      description: "I have completed my A2 level german and now learning B1."
     },
   ];
 

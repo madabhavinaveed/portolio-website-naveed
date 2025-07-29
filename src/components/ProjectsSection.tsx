@@ -41,28 +41,30 @@ const ProjectsSection = () => {
 
   const workExperience = [
     {
-      company: "OTS Consulting Services LLP",
+      company: "OTS Consulting Services LLP (now ChampionX)",
       position: "Senior Software Developer (Frontend)",
       period: "May 2023 - June 2025",
-      description: "Lead frontend development for XSPOC production optimization project. Built interactive interfaces using React.js and advanced visualizations with AmCharts 5. Provided technical leadership and code reviews."
+      description: "Built responsive dashboards with interactive charts to track alarms, downtime, and historical oil well data. Introduced resizable, sortable tables and cut memory usage of large datasets from 1GB to under 400MB. Led a security effort that eliminated 80% of high/medium-risk vulnerabilities flagged by Checkmarx.",
+      link:"https://www.championx.com/"
     },
     {
       company: "Orangebits Software Technologies",
       position: "Software Developer",
       period: "Jul 2021 - April 2023",
-      description: "Developed responsive interfaces using Vue.js and React.js for healthcare, clinical research, and DeFi applications. Implemented dynamic components and reporting dashboards."
+      description: "Led development of the Business Entity module and was promoted to the Delta team within six months. Built an admin dashboard for managing 10,000+ users and tracking over 1 million trades in real-time. Standardized UI components, reduced build times by 10%, and made the app ADA-compliant. Cross-team collaboration also halved daily meetings.",
+      link:"https://www.rxsense.com/"
     },
     {
       company: "Crontech LLC",
       position: "Software Engineer",
       period: "Dec 2018 - Jun 2021",
-      description: "Built frontend interfaces for crypto exchanges, wallets, and ICO platforms. Created secure UI components for blockchain-based applications with multi-currency support."
+      description: "One of the first five engineers at Crontech, helped build crypto trading apps and ICO platforms. Implemented real-time WebSocket updates for 1M+ live connections, designed secure KYC/payment flows, and revamped the UI with support for light and dark themes."
     },
     {
       company: "PRCV Soft",
       position: "Junior Software Engineer", 
       period: "July 2016 - Nov 2018",
-      description: "Developed e-commerce platforms using WordPress, Shopify, and OpenCart. Built BoloCab ride-booking platform using AngularJS with real-time booking features."
+      description: "Migrated client web apps from jQuery to AngularJS and Bootstrap, cutting tech debt by 20%. Delivered CMS solutions that automated manual processes, reducing effort for clients by 30%."
     }
   ];
 
