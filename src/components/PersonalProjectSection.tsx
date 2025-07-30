@@ -81,21 +81,18 @@ const ProjectsSection = () => {
     {
       company: "Freelance (Fiverr)",
       position: "Senior Software Developer",
-      period: "Sep 2020 – Present",
       description:
         "Worked with startups and small businesses on Fiverr to deliver fast, responsive web solutions. Specialized in translating client ideas into functional React, Angular, and Vue applications. Delivered everything from custom UI components to full admin dashboards. Built a reputation for delivering beyond expectations, with strong client reviews highlighting reliability, speed, and code quality.",
     },
     {
       company: "Freelance (Upwork)",
       position: "Software Developer",
-      period: "Sep 2018 – Present",
       description:
         "Worked with global clients on web and mobile projects using Angular, React, and React Native. Delivered frontend modules, built scalable app architectures, and translated Figma designs into production-ready code. Maintained a 5★ client rating across multiple projects, praised for clear communication, code quality, and reliability. Specialized in building modular, performance-optimized systems with a strong focus on user experience and scalability.",
     },
     {
       company: "German Language",
       position: "Software Developer",
-      period: "Jul 2021 - April 2023",
       description: "I have completed my A2 level german and now learning B1.",
     },
   ];
@@ -120,9 +117,9 @@ const ProjectsSection = () => {
             Professional Experience
           </h3> */}
             <p className="text-muted-foreground text-left mx-auto">
-              I enjoy coding on my free time. Whether it is following a course
-              to learn something new, or to create something fun and even
-              sometimes useful.
+              I enjoy coding in my free time and have done freelance work during
+              weekends or vacations, whether it's taking courses, building
+              something fun, or creating useful tools.
             </p>
 
             {/* Work cards in two columns */}
