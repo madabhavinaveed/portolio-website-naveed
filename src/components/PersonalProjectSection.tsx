@@ -82,13 +82,13 @@ const ProjectsSection = () => {
       company: "Freelance (Fiverr)",
       position: "Senior Software Developer",
       description:
-        "Worked with startups and small businesses on Fiverr to deliver fast, responsive web solutions. Specialized in translating client ideas into functional React, Angular, and Vue applications. Delivered everything from custom UI components to full admin dashboards. Built a reputation for delivering beyond expectations, with strong client reviews highlighting reliability, speed, and code quality.",
+        "Built responsive web apps on Fiverr using React, Angular, and Vue. Turned client ideas into functional products by developing custom components and features. Known for fast delivery, clean code, and dependable results.",
     },
     {
       company: "Freelance (Upwork)",
       position: "Software Developer",
       description:
-        "Worked with global clients on web and mobile projects using Angular, React, and React Native. Delivered frontend modules, built scalable app architectures, and translated Figma designs into production-ready code. Maintained a 5★ client rating across multiple projects, praised for clear communication, code quality, and reliability. Specialized in building modular, performance-optimized systems with a strong focus on user experience and scalability.",
+        "Worked with global clients on web and mobile apps using Angular, React, and React Native. Delivered high-quality frontends, translated designs into code, and built scalable, user-friendly systems. Maintained a 5★ rating for clear communication and reliable work.",
     },
     {
       company: "German Language",
