@@ -95,6 +95,13 @@ const ProjectsSection = () => {
       position: "Software Developer",
       description: "I have completed my A2 level german and now learning B1.",
     },
+    {
+      company:
+        "Being Punekar (Co-founder | 9M+ Followers | Facebook & Instagram) ",
+      position: "Software Developer",
+      description:
+        "Built and scaled Being Punekar—a digital community page for my hometown Pune—into one of the city’s most followed social media brands, with 5M followers on Facebook and 4M on Instagram.We created viral content around local food, travel spots, memes, and events, organically growing a highly engaged audience. Promoted city-wide events like flea markets, often pulling 5,000+ attendees through targeted posts and reels.This project gave me hands-on experience in digital marketing, content strategy, audience building, and event promotion.",
+    },
   ];
 
   return (
