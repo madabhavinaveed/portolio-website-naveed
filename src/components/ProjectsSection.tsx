@@ -114,11 +114,7 @@ const ProjectsSection = () => {
               <p className="m-0 my-4 py-2">
                 I am a Senior Developer with 8 years of experience building
                 scalable web applications across both startups and enterprise
-                environments. At OTS, I led development on the XSPOC product,
-                handling over 50% of new module features and reducing security
-                risks using Checkmarx. At OrangeBits, I contributed to frontend
-                improvements focused on performance and stability for a
-                healthcare tech platform.
+                environments.
               </p>
               {/* <p className="m-0 mt-2 py-2"></p>
               <p className="m-0 mt-2"></p> */}
