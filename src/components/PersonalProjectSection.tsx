@@ -82,13 +82,13 @@ const ProjectsSection = () => {
       company: "Freelance (Fiverr)",
       position: "Senior Software Developer",
       description:
-        "Built responsive web apps on Fiverr using React, Angular, and Vue. Turned client ideas into functional products by developing custom components and features. Known for fast delivery, clean code, and dependable results.",
+        "Earned the Top Rated Seller badge on Fiverr by building responsive web applications using modern JavaScript frameworks. Transformed client ideas into functional, production-ready products through custom components and dynamic features. Recognized for clean code, fast delivery, and dependable results.",
     },
     {
       company: "Freelance (Upwork)",
       position: "Software Developer",
       description:
-        "Worked with global clients on web and mobile apps using Angular, React, and React Native. Delivered high-quality frontends, translated designs into code, and built scalable, user-friendly systems. Maintained a 5★ rating for clear communication and reliable work.",
+        "Developed React projects and helped clients solve Angular-related issues during weekends to deepen knowledge of modern web technologies. Focused on learning through real-world challenges while delivering practical solutions.",
     },
     {
       company: "German Language",
@@ -124,9 +124,10 @@ const ProjectsSection = () => {
             Professional Experience
           </h3> */}
             <p className="text-muted-foreground text-left mx-auto">
-              I enjoy coding in my free time and have done freelance work during
-              weekends or vacations, whether it's taking courses, building
-              something fun, or creating useful tools.
+              I enjoy coding in my free time and often take on freelance
+              projects during weekends or vacations. Whether it's taking online
+              courses, building fun side projects, or creating practical tools,
+              I'm always looking for ways to learn and improve.
             </p>
 
             {/* Work cards in two columns */}
