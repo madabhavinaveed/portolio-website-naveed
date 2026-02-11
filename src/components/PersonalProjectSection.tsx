@@ -93,7 +93,7 @@ const ProjectsSection = () => {
     {
       company: "German Language",
       position: "Software Developer",
-      description: "I have completed my A2 level german and now learning B1.",
+      description: "I have completed my b1 level german and now wrapping up b2",
     },
     {
       company:
