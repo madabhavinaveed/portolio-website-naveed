@@ -41,8 +41,7 @@ const HeroSection = () => {
           </p>
 
           {/* Social Media Links */}
-          <div className="flex justify-center gap-4 mb-8">
-            <Button
+          {/* <Button
               variant="outline"
               size="lg"
               className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
@@ -56,11 +55,12 @@ const HeroSection = () => {
                 <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 GitHub
               </a>
-            </Button>
+            </Button> */}
+          <div className="flex justify-center gap-4 mb-8">
             <Button
               variant="outline"
               size="lg"
-              className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
+              className="border-primary/20 hover:border-primary hover:bg-primary/20 transition-smooth group"
               asChild
             >
               <a

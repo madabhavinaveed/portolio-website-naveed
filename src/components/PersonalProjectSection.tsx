@@ -124,8 +124,7 @@ const ProjectsSection = () => {
             Professional Experience
           </h3> */}
             <p className="text-muted-foreground text-left mx-auto">
-              I enjoy coding in my free time and often take on freelance
-              projects during weekends or vacations. Whether it's taking online
+              I enjoy coding in my free time. Whether it's taking online
               courses, building fun side projects, or creating practical tools,
               I'm always looking for ways to learn and improve.
             </p>
