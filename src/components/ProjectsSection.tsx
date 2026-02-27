@@ -1,146 +1,113 @@
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ExternalLink, Github } from "lucide-react";
+import { motion } from "framer-motion";
+import ProjectCard from "./ProjectCard";
+import projectOts from "@/assets/project-ots.jpg";
+import projectOrangebits from "@/assets/project-orangebits.jpg";
+import projectCrontech from "@/assets/project-crontech.jpg";
+import projectPortfolio from "@/assets/project-portfolio.jpg";
+import projectFreelance from "@/assets/project-freelance.jpg";
+import projectPunekar from "@/assets/project-punekar.jpg";
+
+const professionalProjects = [
+  {
+    title: "Oil Well Analytics Dashboard",
+    // company: "OTS Consulting Services (ChampionX)",
+    description:
+      "Built responsive dashboards with interactive charts to track alarms, downtime, and historical oil well data. Cut memory usage from 1GB to under 400MB and eliminated 80% of security vulnerabilities.",
+    image: projectOts,
+    tags: ["React", "Charts", "Performance", "Security"],
+  },
+  {
+    title: "Admin & Trading Platform",
+    company: "Orangebits Software Technologies",
+    description:
+      "Led development of an admin dashboard managing 10,000+ users and tracking over 1 million trades in real-time. Standardized UI components and reduced build times by 10%.",
+    image: projectOrangebits,
+    tags: ["React", "Real-time", "UI/UX", "ADA"],
+  },
+  {
+    title: "Crypto Trading & ICO Platform",
+    company: "Crontech LLC",
+    description:
+      "One of the first five engineers — built crypto trading apps with real-time WebSocket updates for 1M+ live connections. Designed secure KYC/payment flows with light/dark theme support.",
+    image: projectCrontech,
+    tags: ["WebSocket", "Crypto", "Security", "KYC"],
+  },
+];
+
+const personalProjects = [
+  {
+    title: "Personal Portfolio Website",
+    company: undefined,
+    description:
+      "Built this portfolio site to explore microfrontends, with plans to integrate Angular and Vue as part of a microfrontend architecture course.",
+    image: projectPortfolio,
+    tags: ["Microfrontends", "React", "Portfolio"],
+    link: "https://naveedmadabhavi.com",
+  },
+  {
+    title: "Freelance Development",
+    company: "Fiverr & Upwork",
+    description:
+      "Earned the Top Rated Seller badge on Fiverr building responsive web applications. Delivered React and Angular solutions with clean code and fast turnaround.",
+    image: projectFreelance,
+    tags: ["Fiverr", "React", "Angular", "Freelance"],
+  },
+  {
+    title: "Being Punekar",
+    company: "Co-founder | 9M+ Followers",
+    description:
+      "Co-founded a social media brand on Facebook & Instagram celebrating Pune's culture, food, and city life, growing to over 9 million followers.",
+    image: projectPunekar,
+    tags: ["Social Media", "Branding", "9M+ Followers"],
+  },
+];
 
 const ProjectsSection = () => {
-  const projects = [
-    {
-      title: "XSPOC Production Optimization",
-      description:
-        "Lead frontend development for production optimization project focused on diagnosing anomalies in artificially-lifted wells. Built interactive, data-rich interfaces with advanced visualizations.",
-      technologies: [
-        "React.js",
-        "AmCharts 5",
-        "DataTables",
-        "CodeAI",
-        "REST APIs",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      title: "Healthcare & Clinical Research Platform",
-      description:
-        "Developed responsive interfaces for healthcare and clinical research applications with real-time datatables and reporting dashboards.",
-      technologies: ["Vue.js", "React.js", "SCSS", "Node.js", ".NET"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      title: "Crypto Exchange & Wallet Platform",
-      description:
-        "Built secure UI components for crypto exchanges, digital wallets, and ICO platforms including Bitcron with support for 50+ cryptocurrencies.",
-      technologies: [
-        "Vue.js",
-        "React.js",
-        "Angular",
-        "Web3",
-        "Smart Contracts",
-      ],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      title: "E-commerce Platforms (M2 Apparel, Hoffner)",
-      description:
-        "Developed and customized e-commerce platforms using WordPress, Shopify, and OpenCart with responsive design and secure checkout flows.",
-      technologies: ["WordPress", "Shopify", "OpenCart", "AngularJS", "Java"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
-  ];
-
-  const workExperience = [
-    {
-      company: "OTS Consulting Services LLP (now ChampionX)",
-      position: "Senior Software Developer (Frontend)",
-      period: "May 2023 - June 2025",
-      description:
-        "Built responsive dashboards with interactive charts to track alarms, downtime, and historical oil well data. Introduced resizable, sortable tables and cut memory usage of large datasets from 1GB to under 400MB. Led a security effort that eliminated 80% of high/medium-risk vulnerabilities flagged by Checkmarx.",
-      link: "https://www.championx.com/",
-    },
-    {
-      company: "Orangebits Software Technologies",
-      position: "Software Developer",
-      period: "Jul 2021 - April 2023",
-      description:
-        "Led development of the Business Entity module and was promoted to the Delta team within six months. Built an admin dashboard for managing 10,000+ users and tracking over 1 million trades in real-time. Standardized UI components, reduced build times by 10%, and made the app ADA-compliant. Cross-team collaboration also halved daily meetings.",
-      link: "https://www.rxsense.com/",
-    },
-    {
-      company: "Crontech LLC",
-      position: "Software Engineer",
-      period: "Dec 2018 - Jun 2021",
-      description:
-        "One of the first five engineers at Crontech, helped build crypto trading apps and ICO platforms. Implemented real-time WebSocket updates for 1M+ live connections, designed secure KYC/payment flows, and revamped the UI with support for light and dark themes.",
-    },
-    {
-      company: "PRCV Soft",
-      position: "Junior Software Engineer",
-      period: "July 2016 - Nov 2018",
-      description:
-        "Migrated client web apps from jQuery to AngularJS and Bootstrap, cutting tech debt by 20%. Delivered CMS solutions that automated manual processes, reducing effort for clients by 30%.",
-    },
-  ];
-
   return (
-    <section className="yellow-section py-20 px-6">
-      <div className="container mx-auto max-w-6xl">
-        {/* Projects Header */}
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-secondary-foreground mb-4">
+    <section className="py-20 px-4 bg-section">
+      <div className="max-w-6xl mx-auto">
+        {/* Professional Projects */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-card-foreground mb-2">
             Projects
           </h2>
-          <p className="text-xl text-secondary-foreground/80 max-w-2xl mx-auto">
-            {"-->"} of the professional kind
+          <p className="text-muted-foreground text-lg">
+            → of the professional kind
           </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+          {professionalProjects.map((project, index) => (
+            <ProjectCard key={project.title} {...project} index={index} />
+          ))}
         </div>
 
-        {/* Work Experience */}
-        <div className="mb-16 animate-scale-in py-6 ">
-          <div className="section-card bg-card/95 backdrop-blur-sm px-6 py-8">
-            <div className="text-muted-foreground text-left  mx-auto space-y-2 mb-6">
-              <p className="m-0 my-4 py-2">
-                I am a Senior Developer with 8 years of experience building
-                scalable web applications across both startups and enterprise
-                environments.
-              </p>
-              {/* <p className="m-0 mt-2 py-2"></p>
-              <p className="m-0 mt-2"></p> */}
-            </div>
-            {/* Work cards in two columns */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {workExperience.map((job, index) => (
-                <div key={index} className="border-l-4 border-none">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
-                    {/* <h4 className="text-lg font-semibold text-card-foreground">
-                    {job.position}
-                  </h4> */}
-                    {/* <Badge variant="secondary" className="w-fit mt-2 md:mt-0">
-                    {job.period}
-                  </Badge> */}
-                  </div>
-                  <p className="font-medium text-primary mb-1">
-                    @ {job.company}
-                  </p>
-                  <p className="text-muted-foreground text-sm">
-                    {job.description}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+        {/* Personal Projects */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="text-center mb-14"
+        >
+          <h2 className="text-3xl md:text-4xl font-bold text-card-foreground mb-2">
+            Projects
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            → of the personal kind
+          </p>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {personalProjects.map((project, index) => (
+            <ProjectCard key={project.title} {...project} index={index} />
+          ))}
         </div>
       </div>
     </section>

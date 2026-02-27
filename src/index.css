@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -41,17 +41,32 @@
     --radius: 1rem;
 
     /* Custom gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(200 100% 70%), hsl(220 100% 60%));
---gradient-secondary: linear-gradient(135deg, hsl(45 100% 75%), hsl(35 100% 65%));
---gradient-hero: linear-gradient(135deg, hsl(190 100% 50%), hsl(180 100% 40%)); /* Bright Hero */
---gradient-tertiary: linear-gradient(135deg, hsl(180 70% 75%), hsl(180 80% 60%));
---gradient-quaternary: linear-gradient(135deg, hsl(10 100% 70%), hsl(20 100% 60%));
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(200 100% 70%),
+      hsl(220 100% 60%)
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      hsl(45 100% 75%),
+      hsl(35 100% 65%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(190 100% 50%),
+      hsl(180 100% 40%)
+    ); /* Bright Hero */
+    --gradient-tertiary: linear-gradient(
+      135deg,
+      hsl(180 70% 75%),
+      hsl(180 80% 60%)
+    );
+    --gradient-quaternary: linear-gradient(
+      135deg,
+      hsl(10 100% 70%),
+      hsl(20 100% 60%)
+    );
 
-
-    
-    
-    
-    
     /* Shadows with purple tint */
     --shadow-elegant: 0 10px 30px -10px hsl(280 100% 45% / 0.3);
     --shadow-glow: 0 0 40px hsl(315 100% 70% / 0.4);
@@ -109,10 +124,23 @@
     --ring: 270 91% 75%;
 
     /* Dark mode gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(280 100% 35%), hsl(315 100% 60%));
-    --gradient-secondary: linear-gradient(135deg, hsl(45 93% 48%), hsl(35 91% 55%));
-    --gradient-hero: linear-gradient(135deg, hsl(280 100% 35%) 0%, hsl(315 100% 60%) 50%, hsl(45 93% 48%) 100%);
-    
+    --gradient-primary: linear-gradient(
+      135deg,
+      hsl(280 100% 35%),
+      hsl(315 100% 60%)
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      hsl(45 93% 48%),
+      hsl(35 91% 55%)
+    );
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(280 100% 35%) 0%,
+      hsl(315 100% 60%) 50%,
+      hsl(45 93% 48%) 100%
+    );
+
     --shadow-elegant: 0 10px 30px -10px hsl(280 100% 35% / 0.4);
     --shadow-glow: 0 0 40px hsl(315 100% 60% / 0.3);
     --shadow-card: 0 8px 32px hsl(280 100% 35% / 0.2);
@@ -126,7 +154,8 @@
 
   body {
     @apply bg-background text-foreground font-inter;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
   }
 }
 
@@ -182,11 +211,17 @@
   .yellow-section {
     background: var(--gradient-secondary);
   }
-  .blue-section{
+  .blue-section {
     background: var(--gradient-tertiary);
-    
   }
-  .red-section{
+  .red-section {
     background: var(--gradient-quaternary);
   }
-} 
+}
+.card-glass {
+  box-shadow: 0 20px 60px -15px rgba(28, 140, 233, 0.15) !important;
+}
+
+.card-glass:hover {
+  box-shadow: 0 20px 60px -15px rgba(28, 140, 233, 0.45) !important;
+}
