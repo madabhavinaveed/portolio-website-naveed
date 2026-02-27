@@ -126,8 +126,9 @@ const ProjectsSection = () => {
           </h3> */}
             <p className="text-muted-foreground text-left mx-auto">
               I enjoy coding in my free time. Whether it's taking online
-              courses, building fun side projects, or creating practical tools,
-              I'm always looking for ways to learn and improve.
+              courses, building fun side projects, taking on freelance work to
+              better understand the industry, or attending conferences, I'm
+              always looking for ways to learn and improve.
             </p>
 
             {/* Work cards in two columns */}
