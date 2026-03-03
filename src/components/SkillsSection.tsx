@@ -32,6 +32,12 @@ const skills: Skill[] = [
     category: "Frameworks",
   },
   {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    category: "Frameworks",
+  },
+
+  {
     name: "Angular",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg",
     category: "Frameworks",
