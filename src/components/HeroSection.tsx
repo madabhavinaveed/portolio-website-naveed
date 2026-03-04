@@ -1,6 +1,7 @@
 import { Github, Linkedin, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.png";
+import { FaStackOverflow } from "react-icons/fa";
 
 const HeroSection = () => {
   const scrollToNext = () => {
@@ -31,17 +32,17 @@ const HeroSection = () => {
             HELLO! I'M{" "}
             <span className="bg-gradient-primary bg-clip-text text-transparent">
               NAVEED
-            </span>{" "}
-            {/* & I LOVE TO CODE! */}
+            </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-10 leading-relaxed">
             Continue reading to get to know me better, or follow along on social
             media for updates.
           </p>
 
-          {/* Social Media Links */}
-          {/* <Button
+          {/* Social Media Links - Properly Aligned */}
+          <div className="flex flex-wrap justify-center gap-4 mb-6">
+            <Button
               variant="outline"
               size="lg"
               className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
@@ -55,8 +56,24 @@ const HeroSection = () => {
                 <Github className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform" />
                 GitHub
               </a>
-            </Button> */}
-          <div className="flex justify-center gap-4 mb-8">
+            </Button>
+
+            <Button
+              variant="outline"
+              size="lg"
+              className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
+              asChild
+            >
+              <a
+                href="https://stackoverflow.com/users/5216033/naved-madabhavi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaStackOverflow className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform text-orange-500" />
+                Stack Overflow
+              </a>
+            </Button>
+
             <Button
               variant="outline"
               size="lg"
@@ -78,7 +95,7 @@ const HeroSection = () => {
         {/* Scroll Indicator */}
         <button
           onClick={scrollToNext}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white/80 hover:text-white transition-smooth animate-bounce"
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/80 hover:text-white transition-smooth animate-bounce"
           aria-label="Scroll to next section"
         >
           <ChevronDown className="w-8 h-8" />
