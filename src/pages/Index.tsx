@@ -5,6 +5,9 @@ import ProjectsSection from "@/components/ProjectsSection";
 import PersonalProjectSection from "@/components/PersonalProjectSection";
 import FooterSection from "@/components/FooterSection";
 import SkillsSection from "@/components/SkillsSection";
+import ProjectsSectionDescription from "@/components/ProjectsSectionDescription";
+import GamesSection from "@/components/GamesSection";
+import BooksSection from "@/components/BooksSection";
 
 const Index = () => {
   return (
@@ -12,9 +15,12 @@ const Index = () => {
       <HeroSection />
       <BioSection />
       {/* <SkillsSection /> */}
+      <ProjectsSectionDescription />
       <ProjectsSection />
       <SkillsSection />
       <PersonalProjectSection />
+      <BooksSection />
+      <GamesSection />
       <FooterSection />
     </div>
   );

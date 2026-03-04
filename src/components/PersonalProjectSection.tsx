@@ -110,11 +110,11 @@ const ProjectsSection = () => {
       <div className="container mx-auto max-w-6xl">
         {/* Projects Header */}
         <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl font-bold text-secondary-foreground mb-4">
-            Projects
-          </h2>
+          {/* <h2 className="text-4xl font-bold text-secondary-foreground mb-4">
+            What I am upto latetly
+          </h2> */}
           <p className="text-xl text-secondary-foreground/80 max-w-2xl mx-auto">
-            {"-->"} of the personal kind
+            {"-->"} What I am upto latetly ?
           </p>
         </div>
 

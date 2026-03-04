@@ -60,7 +60,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="lg"
-              className="border-primary/20 hover:border-primary hover:bg-primary/20 transition-smooth group"
+              className="border-primary/20 hover:border-primary hover:bg-primary/10 transition-smooth group"
               asChild
             >
               <a

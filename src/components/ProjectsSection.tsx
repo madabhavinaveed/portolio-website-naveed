@@ -78,7 +78,7 @@ const ProjectsSection = () => {
             Projects
           </h2>
           <p className="text-muted-foreground text-lg">
-            → of the professional kind
+            → some more of the professional kind
           </p>
         </motion.div>
 
