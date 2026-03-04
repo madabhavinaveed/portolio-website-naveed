@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Trophy } from "lucide-react";
-import Badminton from "./../assets/images/badminton.jpg";
-import Football from "./../assets/images/Football.jpg";
+import Badminton from "@//assets/images/badminton.jpg";
+import Football from "@//assets/images/Football.jpg";
 
 interface Sport {
   name: string;
