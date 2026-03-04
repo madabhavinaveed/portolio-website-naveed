@@ -91,10 +91,10 @@ const ProjectsSection = () => {
     //     "Developed React projects and helped clients solve Angular-related issues during weekends to deepen knowledge of modern web technologies. Focused on learning through real-world challenges while delivering practical solutions.",
     // },
     {
-      company: "German Language",
+      company: "Languages",
       position: "Software Developer",
       description:
-        "I am fluent in German at the B1 level and am currently advancing toward B2 proficiency.",
+        "I am fluent in English and Hindi, my mother tongue, and I am also fluent in German at the B1 level, currently advancing toward B2 proficiency. I would love to learn Arabic in the future.",
     },
     // {
     //   company:
