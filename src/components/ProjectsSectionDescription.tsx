@@ -15,20 +15,29 @@ const projects: Project[] = [
     name: "BitDelta",
     url: "https://bitdelta.com/en/trade/spot/btc-usdc",
     role: "Senior Frontend Developer",
-    description: "A global cryptocurrency exchange platform enabling real-time spot trading across multiple currency pairs with advanced charting and analytics.",
+    description:
+      "A global cryptocurrency exchange platform enabling real-time spot trading across multiple currency pairs with advanced charting and analytics.",
     responsibilities: [
       "Architected and developed the real-time spot trading interface with live order books, candlestick charts, and depth charts",
       "Implemented WebSocket-based price feeds for seamless real-time data updates across trading pairs",
       "Built customizable trading layouts (Default, Compact, Pro) to cater to different trader preferences",
       "Optimized rendering performance for high-frequency data updates using virtualization and memoization",
     ],
-    techStack: ["React", "TypeScript", "WebSocket", "TradingView", "Tailwind CSS", "Redux"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "WebSocket",
+      "TradingView",
+      "Tailwind CSS",
+      "Redux",
+    ],
   },
   {
     name: "Pro Traders Fund",
     url: "https://app.protradersfund.com/",
     role: "Frontend Developer",
-    description: "A proprietary trading firm platform offering instant funding to traders with evaluation challenges, profit tracking, and up to 90% profit sharing.",
+    description:
+      "A proprietary trading firm platform offering instant funding to traders with evaluation challenges, profit tracking, and up to 90% profit sharing.",
     responsibilities: [
       "Developed the trader evaluation dashboard with real-time profit/loss tracking and analytics",
       "Built account management features including payout processing and challenge progress tracking",
@@ -41,33 +50,50 @@ const projects: Project[] = [
     name: "Apex Markets",
     url: "https://app.apexmarkets.io/",
     role: "Full Stack Developer",
-    description: "A multi-asset trading platform for Stocks, CFDs, Crypto, and Commodities with enterprise-grade security and compliance.",
+    description:
+      "A multi-asset trading platform for Stocks, CFDs, Crypto, and Commodities with enterprise-grade security and compliance.",
     responsibilities: [
       "Built the secure trading platform frontend with DDoS protection awareness and PCI DSS compliant payment flows",
       "Developed multi-asset portfolio views supporting Stocks, CFDs, Crypto, and Commodities",
       "Integrated multiple payment gateways including Visa, Mastercard, Wire Transfer, and Bitcoin",
       "Implemented real-time customer support chat and order execution monitoring system",
     ],
-    techStack: ["React", "TypeScript", "Node.js", "PostgreSQL", "Tailwind CSS", "Socket.io"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "Socket.io",
+    ],
   },
   {
     name: "BTC Proxy",
     url: "https://btcproxy.io/",
     role: "Frontend Developer (Web3)",
-    description: "A Bitcoin staking and AI-leveraged yield protocol enabling users to earn yield on their BTC holdings through smart contract interactions.",
+    description:
+      "A Bitcoin staking and AI-leveraged yield protocol enabling users to earn yield on their BTC holdings through smart contract interactions.",
     responsibilities: [
       "Developed the DApp interface for Bitcoin staking, unstaking, and yield tracking",
       "Integrated Web3 wallet connections (MetaMask, WalletConnect) and smart contract interactions",
       "Built the Alpha BTC yield dashboard displaying real-time APY, staking metrics, and portfolio performance",
       "Created marketing landing pages that helped establish trust with major global crypto brands",
     ],
-    techStack: ["React", "TypeScript", "Ethers.js", "Web3.js", "Solidity", "Tailwind CSS"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Ethers.js",
+      "Web3.js",
+      "Solidity",
+      "Tailwind CSS",
+    ],
   },
   {
-    name: "ChampionX",
+    name: "Energy Industry Client",
     url: "https://www.championx.com/",
     role: "Frontend Developer",
-    description: "Corporate website for a global leader in chemistry and technology solutions serving the energy industry across multiple regions.",
+    description:
+      "Corporate website for a major global leader in chemistry and technology solutions for the energy industry,",
     responsibilities: [
       "Contributed to the enterprise-grade corporate website with multi-region content support",
       "Built product catalog pages and interactive solutions showcase with filtering capabilities",
@@ -77,17 +103,25 @@ const projects: Project[] = [
     techStack: ["React", "TypeScript", "CMS Integration", "SCSS", "REST API"],
   },
   {
-    name: "RxSense",
-    url: "https://www.rxsense.com/",
+    name: "Pharmacy Benefit Manager Platform",
+    url: "",
     role: "Senior Frontend Developer",
-    description: "A pharmacy benefit management (PBM) platform reimagining Rx solutions for health systems, employers, and PBMs with modular enterprise tools.",
+    description:
+      "A Pharmacy Benefit Manager (PBM) platform revolutionizing Rx solutions for health systems, employers, and PBMs with modular enterprise tools.",
     responsibilities: [
-      "Developed modular UI components for the RxIQ® Enterprise platform serving PBMs, health systems, and employers",
+      "Developed modular UI components for the Enterprise platform serving PBMs, health systems, and employers",
       "Built interactive analytics dashboards and case study pages with data visualization",
       "Ensured HIPAA-aware frontend practices and accessibility standards (WCAG 2.1 AA) compliance",
       "Collaborated with backend teams to integrate complex prescription and benefits data flows",
     ],
-    techStack: ["React", "TypeScript", "D3.js", "Tailwind CSS", "GraphQL", "Jest"],
+    techStack: [
+      "React",
+      "TypeScript",
+      "D3.js",
+      "Tailwind CSS",
+      "GraphQL",
+      "Jest",
+    ],
   },
 ];
 
@@ -111,53 +145,73 @@ const ProjectsSection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
-            <motion.a
-              key={project.name}
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="group block rounded-xl border border-[hsl(var(--skill-border))] bg-[hsl(var(--skill-card-bg))] p-6 hover:border-[hsl(var(--skill-border-hover))] hover:bg-[hsl(var(--skill-card-hover))] transition-all duration-300"
-            >
-              <div className="flex items-start justify-between mb-3">
-                <h3 className="text-xl font-bold text-[hsl(var(--skills-title))] group-hover:text-[hsl(var(--skills-category))] transition-colors">
-                  {project.name}
-                </h3>
-                <ExternalLink className="w-4 h-4 text-[hsl(var(--skills-subtitle))] group-hover:text-[hsl(var(--skills-category))] transition-colors mt-1 shrink-0" />
-              </div>
-              <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-[hsl(var(--skills-category)/0.15)] text-[hsl(var(--skills-category))] mb-3">
-                {project.role}
-              </span>
-              <p className="text-sm text-[hsl(var(--skills-subtitle))] mb-4">
-                {project.description}
-              </p>
-              <h4 className="text-xs font-semibold uppercase tracking-wider text-[hsl(var(--skills-category))] mb-2">
-                Key Responsibilities
-              </h4>
-              <ul className="space-y-2 mb-4">
-                {project.responsibilities.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-[hsl(var(--skill-name))]">
-                    <span className="text-[hsl(var(--skills-category))] mt-1 shrink-0">▸</span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <div className="flex flex-wrap gap-2">
-                {project.techStack.map((tech) => (
-                  <span
-                    key={tech}
-                    className="text-xs px-2.5 py-1 rounded-full border border-[hsl(var(--skill-border))] text-[hsl(var(--skills-subtitle))] bg-[hsl(var(--skills-bg))]"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </motion.a>
-          ))}
+          {projects.map((project, index) => {
+            const content = (
+              <motion.div
+                key={project.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="group block rounded-xl border border-[hsl(var(--skill-border))] bg-[hsl(var(--skill-card-bg))] p-6 hover:border-[hsl(var(--skill-border-hover))] hover:bg-[hsl(var(--skill-card-hover))] transition-all duration-300"
+              >
+                <div className="flex items-start justify-between mb-3">
+                  <h3 className="text-xl font-bold text-[hsl(var(--skills-title))] group-hover:text-[hsl(var(--skills-category))] transition-colors">
+                    {project.name}
+                  </h3>
+                  {project.url && (
+                    <ExternalLink className="w-4 h-4 text-[hsl(var(--skills-subtitle))] group-hover:text-[hsl(var(--skills-category))] transition-colors mt-1 shrink-0" />
+                  )}
+                </div>
+                <span className="inline-block text-xs font-semibold px-3 py-1 rounded-full bg-[hsl(var(--skills-category)/0.15)] text-[hsl(var(--skills-category))] mb-3">
+                  {project.role}
+                </span>
+                <p className="text-sm text-[hsl(var(--skills-subtitle))] mb-4">
+                  {project.description}
+                </p>
+                <h4 className="text-xs font-semibold uppercase tracking-wider text-[hsl(var(--skills-category))] mb-2">
+                  Key Responsibilities
+                </h4>
+                <ul className="space-y-2 mb-4">
+                  {project.responsibilities.map((item, i) => (
+                    <li
+                      key={i}
+                      className="flex items-start gap-2 text-sm text-[hsl(var(--skill-name))]"
+                    >
+                      <span className="text-[hsl(var(--skills-category))] mt-1 shrink-0">
+                        ▸
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-2">
+                  {project.techStack.map((tech) => (
+                    <span
+                      key={tech}
+                      className="text-xs px-2.5 py-1 rounded-full border border-[hsl(var(--skill-border))] text-[hsl(var(--skills-subtitle))] bg-[hsl(var(--skills-bg))]"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            );
+
+            return project.url ? (
+              <motion.a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={project.name}
+                className="block"
+              >
+                {content}
+              </motion.a>
+            ) : (
+              <div key={project.name}>{content}</div> // Just render as a div if no URL
+            );
+          })}
         </div>
       </div>
     </section>
