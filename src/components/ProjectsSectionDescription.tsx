@@ -12,27 +12,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "BitDelta",
-    url: "https://bitdelta.com/en/trade/spot/btc-usdc",
-    role: "Senior Frontend Developer",
-    description:
-      "A global cryptocurrency exchange platform enabling real-time spot trading across multiple currency pairs with advanced charting and analytics.",
-    responsibilities: [
-      "Architected and developed the real-time spot trading interface with live order books, candlestick charts, and depth charts",
-      "Implemented WebSocket-based price feeds for seamless real-time data updates across trading pairs",
-      "Built customizable trading layouts (Default, Compact, Pro) to cater to different trader preferences",
-      "Optimized rendering performance for high-frequency data updates using virtualization and memoization",
-    ],
-    techStack: [
-      "React",
-      "TypeScript",
-      "WebSocket",
-      "TradingView",
-      "Tailwind CSS",
-      "Redux",
-    ],
-  },
-  {
     name: "Pro Traders Fund",
     url: "https://app.protradersfund.com/",
     role: "Frontend Developer",
@@ -46,27 +25,27 @@ const projects: Project[] = [
     ],
     techStack: ["React", "TypeScript", "Next.js", "Tailwind CSS", "REST API"],
   },
-  {
-    name: "Apex Markets",
-    url: "https://app.apexmarkets.io/",
-    role: "Full Stack Developer",
-    description:
-      "A multi-asset trading platform for Stocks, CFDs, Crypto, and Commodities with enterprise-grade security and compliance.",
-    responsibilities: [
-      "Built the secure trading platform frontend with DDoS protection awareness and PCI DSS compliant payment flows",
-      "Developed multi-asset portfolio views supporting Stocks, CFDs, Crypto, and Commodities",
-      "Integrated multiple payment gateways including Visa, Mastercard, Wire Transfer, and Bitcoin",
-      "Implemented real-time customer support chat and order execution monitoring system",
-    ],
-    techStack: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "PostgreSQL",
-      "Tailwind CSS",
-      "Socket.io",
-    ],
-  },
+  // {
+  //   name: "Apex Markets",
+  //   url: "https://app.apexmarkets.io/",
+  //   role: "Full Stack Developer",
+  //   description:
+  //     "A multi-asset trading platform for Stocks, CFDs, Crypto, and Commodities with enterprise-grade security and compliance.",
+  //   responsibilities: [
+  //     "Built the secure trading platform frontend with DDoS protection awareness and PCI DSS compliant payment flows",
+  //     "Developed multi-asset portfolio views supporting Stocks, CFDs, Crypto, and Commodities",
+  //     "Integrated multiple payment gateways including Visa, Mastercard, Wire Transfer, and Bitcoin",
+  //     "Implemented real-time customer support chat and order execution monitoring system",
+  //   ],
+  //   techStack: [
+  //     "React",
+  //     "TypeScript",
+  //     "Next.js",
+  //     "PostgreSQL",
+  //     "Tailwind CSS",
+  //     "Socket.io",
+  //   ],
+  // },
   {
     name: "BTC Proxy",
     url: "https://btcproxy.io/",
@@ -121,6 +100,26 @@ const projects: Project[] = [
       "Tailwind CSS",
       "GraphQL",
       "Jest",
+    ],
+  },
+  {
+    name: "BitDelta",
+    url: "https://bitdelta.com/en/trade/spot/btc-usdc",
+    role: "Senior Frontend Developer",
+    description:
+      "A global cryptocurrency exchange platform enabling real-time spot trading across multiple currency pairs with advanced charting and analytics.",
+    responsibilities: [
+      "Architected and developed the real-time spot trading interface with live order books, candlestick charts, and depth charts",
+      "Implemented WebSocket-based price feeds for seamless real-time data updates across trading pairs",
+      "Built customizable trading layouts (Default, Compact, Pro) to cater to different trader preferences",
+    ],
+    techStack: [
+      "React",
+      "TypeScript",
+      "WebSocket",
+      "TradingView",
+      "Tailwind CSS",
+      "Redux",
     ],
   },
 ];
