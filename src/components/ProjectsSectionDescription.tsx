@@ -69,8 +69,8 @@ const projects: Project[] = [
   },
   {
     name: "Energy Industry Client",
-    url: "https://www.championx.com/",
-    role: "Frontend Developer",
+    url: "",
+    role: "Senior Frontend Developer",
     description:
       "Corporate website for a major global leader in chemistry and technology solutions for the energy industry,",
     responsibilities: [
