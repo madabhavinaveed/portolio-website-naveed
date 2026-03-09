@@ -176,7 +176,8 @@ const ProjectsSection = () => {
             Projects
           </h2>
           <p className="text-lg text-[hsl(var(--skills-subtitle))] max-w-2xl mx-auto">
-            A selection of production applications I've built and contributed to
+            A curated selection of production applications I’ve built and
+            contributed to throughout my career.
           </p>
         </motion.div>
 
