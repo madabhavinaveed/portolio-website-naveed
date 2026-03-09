@@ -103,24 +103,61 @@ const projects: Project[] = [
     ],
   },
   {
-    name: "BitDelta",
-    url: "https://bitdelta.com/en/trade/spot/btc-usdc",
+    name: "BitCron",
+    url: "https://botcron.com",
     role: "Senior Frontend Developer",
     description:
-      "A global cryptocurrency exchange platform enabling real-time spot trading across multiple currency pairs with advanced charting and analytics.",
+      "Founded in 2018, BitCron is a multi-cryptocurrency wallet platform that allows users to securely store, send, and receive digital assets. The platform supports 50+ cryptocurrencies and provides a seamless wallet experience with real-time transaction tracking and secure asset management.",
     responsibilities: [
-      "Architected and developed the real-time spot trading interface with live order books, candlestick charts, and depth charts",
-      "Implemented WebSocket-based price feeds for seamless real-time data updates across trading pairs",
-      "Built customizable trading layouts (Default, Compact, Pro) to cater to different trader preferences",
+      "Developed the web dashboard for the BitCron multi-cryptocurrency wallet using Vue.js",
+      "Implemented wallet management features including balance tracking, transaction history, and secure send/receive flows",
+      "Integrated real-time blockchain transaction updates and notifications using WebSocket services",
+      "Built responsive UI components for managing and monitoring over 50 supported cryptocurrencies",
     ],
     techStack: [
-      "React",
-      "TypeScript",
+      "Vue.js",
+      "JavaScript",
       "WebSocket",
-      "TradingView",
+      "Vuex",
       "Tailwind CSS",
-      "Redux",
+      "REST APIs",
     ],
+  },
+  {
+    name: "E-commerce Platforms",
+    url: "",
+    role: "Frontend Developer",
+    description:
+      "Developed and customized multiple e-commerce websites for clients including M2 Apparel and Hoffner using OpenCart and Shopify. These platforms enabled businesses to sell clothing and household utensils online with responsive storefronts, product catalogs, and secure checkout systems.",
+    responsibilities: [
+      "Built and customized OpenCart and Shopify storefronts for client e-commerce businesses",
+      "Developed responsive product listing, product detail, and checkout pages",
+      "Integrated payment gateways, shipping modules, and order management systems",
+      "Implemented product catalog management, filtering, and SEO-friendly page structures",
+    ],
+    techStack: [
+      "Shopify",
+      "OpenCart",
+      "PHP",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "MySQL",
+    ],
+  },
+  {
+    name: "Thread Research",
+    url: "",
+    role: "Senior Frontend Developer",
+    description:
+      "Thread Research is a clinical research platform that connects participants with medical studies and trials. The platform streamlines participant onboarding, eligibility screening, and study engagement through secure digital workflows.",
+    responsibilities: [
+      "Developed the participant-facing web application for clinical trial enrollment and study participation using Vue.js",
+      "Implemented participant profile management, eligibility questionnaires, and onboarding workflows",
+      "Built dashboards for participants to track study progress, appointments, and study communications",
+      "Integrated REST APIs for participant data, consent forms, and study updates",
+    ],
+    techStack: ["Vue.js", "JavaScript", "Vuex", "Tailwind CSS", "REST APIs"],
   },
 ];
 
