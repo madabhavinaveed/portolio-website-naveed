@@ -14,11 +14,10 @@ const BioSection = () => {
               style={{ textAlign: "justify" }}
             >
               <p>
-                I’m an Indian developer who recently moved to Germany, and I’m
-                beyond excited to be shaping my career here. Programming has
-                always been my passion, and I’m dedicated to writing clean,
-                efficient code that not only solves problems but also stands the
-                test of time.
+                I’m an Indian developer who recently moved to Germany.
+                Programming has always been my passion, and I’m dedicated to
+                writing clean, efficient code that not only solves problems but
+                also stands the test of time.
               </p>
 
               <p>
