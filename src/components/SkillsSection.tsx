@@ -108,11 +108,11 @@ const skills: Skill[] = [
     icon: "https://www.amcharts.com/wp-content/themes/flavor/favicon.ico",
     category: "Charting",
   },
-  {
-    name: "D3.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
-    category: "Charting",
-  },
+  // {
+  //   name: "D3.js",
+  //   icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
+  //   category: "Charting",
+  // },
 
   // AI Tools
   {
