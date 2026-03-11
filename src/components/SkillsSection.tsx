@@ -33,7 +33,7 @@ const skills: Skill[] = [
   },
   {
     name: "Next.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    icon: "https://cdn.simpleicons.org/nextdotjs/white",
     category: "Frameworks",
   },
 
@@ -88,11 +88,11 @@ const skills: Skill[] = [
   },
 
   // Charting
-  {
-    name: "Recharts",
-    icon: "https://recharts.org/favicon.ico",
-    category: "Charting",
-  },
+  // {
+  //   name: "Recharts",
+  //   icon: "https://avatars.githubusercontent.com/u/19572513",
+  //   category: "Charting",
+  // },
   {
     name: "TradingView",
     icon: "https://www.tradingview.com/static/images/favicon.ico",
@@ -100,12 +100,12 @@ const skills: Skill[] = [
   },
   {
     name: "Highcharts",
-    icon: "https://www.highcharts.com/media/templates/developer.highcharts.com/img/favicon.ico",
+    icon: "https://cdn.worldvectorlogo.com/logos/highcharts.svg",
     category: "Charting",
   },
   {
     name: "amCharts",
-    icon: "https://www.amcharts.com/wp-content/themes/flavor/favicon.ico",
+    icon: "https://avatars.githubusercontent.com/u/3022014",
     category: "Charting",
   },
   // {
@@ -122,7 +122,7 @@ const skills: Skill[] = [
   },
   {
     name: "ChatGPT",
-    icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg",
+    icon: "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
     category: "AI Tools",
   },
   {
@@ -139,6 +139,22 @@ const skills: Skill[] = [
     name: "GraphQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
     category: "Backend",
+  },
+  // Project Management
+  {
+    name: "Jira",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+    category: "Project Management",
+  },
+  {
+    name: "Confluence",
+    icon: "https://cdn.worldvectorlogo.com/logos/confluence-1.svg",
+    category: "Project Management",
+  },
+  {
+    name: "Trello",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+    category: "Project Management",
   },
   // {
   //   name: "Lovable",
@@ -160,6 +176,7 @@ const categories = [
   "Design",
   "Charting",
   "AI Tools",
+  "Project Management",
 ];
 
 const containerVariants = {
