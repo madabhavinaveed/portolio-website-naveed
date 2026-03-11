@@ -70,7 +70,7 @@ const projects: Project[] = [
   {
     name: "Energy Industry Client",
     url: "",
-    role: "Senior Frontend Developer",
+    role: "Senior Software Developer",
     description:
       "Corporate website for a major global leader in chemistry and technology solutions for the energy industry,",
     responsibilities: [
@@ -158,6 +158,27 @@ const projects: Project[] = [
       "Integrated REST APIs for participant data, consent forms, and study updates",
     ],
     techStack: ["Vue.js", "JavaScript", "Vuex", "Tailwind CSS", "REST APIs"],
+  },
+  {
+    name: "Uniswap Clone",
+    url: "",
+    role: "Frontend Developer (Web3)",
+    description:
+      "A decentralized exchange interface inspired by Uniswap enabling token swaps and liquidity pool tracking using blockchain data.",
+    responsibilities: [
+      "Redesigned the application UI to improve usability and trading workflow",
+      "Integrated The Graph to fetch real-time liquidity pool and token data from subgraphs",
+      "Displayed pool values, token prices, and trading metrics within the dashboard",
+      "Optimized state management using Redux for scalable data handling",
+    ],
+    techStack: [
+      "React",
+      "TypeScript",
+      "Redux",
+      "The Graph",
+      "Web3.js",
+      "Tailwind CSS",
+    ],
   },
 ];
 
