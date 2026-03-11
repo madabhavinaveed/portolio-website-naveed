@@ -125,6 +125,21 @@ const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg",
     category: "AI Tools",
   },
+  {
+    name: "Firebase",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    category: "Database",
+  },
+  {
+    name: "MySQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    category: "Database",
+  },
+  {
+    name: "GraphQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+    category: "Backend",
+  },
   // {
   //   name: "Lovable",
   //   icon: "https://lovable.dev/favicon.ico",
