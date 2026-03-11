@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
-import skyftImg from "@/assets/skyft.webp";
+import skyftImg from "@/assets/Skyft.jpg";
 import worldBetImg from "@/assets/world bet.jpg";
 
 interface ICOProject {
