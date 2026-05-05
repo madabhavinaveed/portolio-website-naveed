@@ -94,7 +94,7 @@ const ProjectsSection = () => {
       company: "Languages",
       position: "Software Developer",
       description:
-        "I am fluent in English and Hindi, my mother tongue, and I am also fluent in German at the B1 level, currently advancing toward B2 proficiency. I would love to learn Arabic in the future.",
+        "I am fluent in English and Hindi, my mother tongue, and I am also fluent in German at the B1/B2 level. I would love to learn Arabic in the future.",
     },
     // {
     //   company:
