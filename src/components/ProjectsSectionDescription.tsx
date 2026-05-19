@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     name: "BTC Proxy",
     url: "https://btcproxy.io/",
-    role: "Frontend Developer (Web3)",
+    role: "Full Stack Developer",
     description:
       "A Bitcoin staking and AI-leveraged yield protocol enabling users to earn yield on their BTC holdings through smart contract interactions.",
     responsibilities: [
