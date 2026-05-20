@@ -65,6 +65,7 @@ const projects: Project[] = [
       "Web3.js",
       "Solidity",
       "Tailwind CSS",
+      "Node.js",
     ],
   },
   {
@@ -104,7 +105,7 @@ const projects: Project[] = [
   },
   {
     name: "BitCron",
-    url: "https://botcron.com",
+    url: "https://bitcron.com",
     role: "Full Stack Developer",
     description:
       "Founded in 2018, BitCron is a multi-cryptocurrency wallet platform that allows users to securely store, send, and receive digital assets. The platform supports 50+ cryptocurrencies and provides a seamless wallet experience with real-time transaction tracking and secure asset management.",
