@@ -257,19 +257,7 @@ const ProjectsSection = () => {
               </motion.div>
             );
 
-            return project.url ? (
-              <motion.a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                key={project.name}
-                className="block"
-              >
-                {content}
-              </motion.a>
-            ) : (
-              <div key={project.name}>{content}</div> // Just render as a div if no URL
-            );
+            return <div key={project.name}>{content}</div>;
           })}
         </div>
       </div>
