@@ -75,10 +75,11 @@ const projects: Project[] = [
     description:
       "Corporate website for a major global leader in chemistry and technology solutions for the energy industry,",
     responsibilities: [
-      "Contributed to the enterprise-grade corporate website with multi-region content support",
-      "Built product catalog pages and interactive solutions showcase with filtering capabilities",
-      "Implemented responsive design ensuring accessibility for a diverse global audience",
-      "Developed CMS integration enabling marketing teams to independently manage content",
+      "Built easy charts to track past data, alarms, and oil well downtime, plus tables you can drag, sort, and resize",
+      "Eliminated 60 % - 70% of high/medium Checkmarx security risks for the app",
+      "Optimized Charting Libraries, cutting usage from 1GB to 300 – 400MB for large data sets",
+      "Reduced our technical debt by 10% by simplifying complex data api calls",
+      "Mentored juniors and collaborated with design and backend team members",
     ],
     techStack: ["React", "TypeScript", "CMS Integration", "SCSS", "REST API"],
   },
