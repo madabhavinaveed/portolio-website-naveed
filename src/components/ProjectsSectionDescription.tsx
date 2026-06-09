@@ -123,6 +123,7 @@ const projects: Project[] = [
       "Vuex",
       "Tailwind CSS",
       "REST APIs",
+      "Angular js",
       "Node Js",
     ],
   },
@@ -141,6 +142,7 @@ const projects: Project[] = [
     techStack: [
       "Shopify",
       "OpenCart",
+      "Angular js",
       "PHP",
       "JavaScript",
       "HTML",
