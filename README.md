@@ -20,10 +20,4 @@ Live demo coming soon.
 - React Router
 - Vite
 
-## Setup & Usage
 
-1. Clone the repo
-   ```bash
-   git clone https://github.com/madabhavinaveed/palacios-replica-react-site.git
-   cd palacios-replica-react-site
-   ```
