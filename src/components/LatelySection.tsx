@@ -23,14 +23,14 @@ const LatelySection = () => {
       transition={{ duration: 0.5, ease: "easeOut" }}
       viewport={{ once: true, margin: "-40px" }}
     >
-      <div className="section-heading">
+      {/* <div className="section-heading">
         <h2>What I am upto lately?</h2>
       </div>
       <p className="section-subtitle">
         I enjoy coding in my free time. Whether it's taking online courses,
         taking freelance work to better understand the industry, or attending
         conferences, I'm always looking for ways to learn and improve.
-      </p>
+      </p> */}
       <div className="lately-list">
         {items.map((item) => (
           <div key={item.title} className="lately-item">
