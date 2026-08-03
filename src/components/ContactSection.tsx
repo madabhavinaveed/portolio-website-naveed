@@ -1,25 +1,28 @@
 import { motion } from "framer-motion";
-
-const links = [
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/",
-  },
-  {
-    label: "GitHub",
-    href: "https://github.com/madabhavinaveed",
-  },
-  {
-    label: "Stack Overflow",
-    href: "https://stackoverflow.com/users/5216033/naved-madabhavi",
-  },
-  {
-    label: "Email",
-    href: "mailto:madabhavinaveed@gmail.com",
-  },
-];
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const ContactSection = () => {
+  const { t } = useLanguage();
+
+  const links = [
+    {
+      label: t.contact.linkedin,
+      href: "https://www.linkedin.com/in/naveed-madabhavi-0888b22a5/",
+    },
+    {
+      label: t.contact.github,
+      href: "https://github.com/madabhavinaveed",
+    },
+    {
+      label: t.contact.stackoverflow,
+      href: "https://stackoverflow.com/users/5216033/naved-madabhavi",
+    },
+    {
+      label: t.contact.email,
+      href: "mailto:madabhavinaveed@gmail.com",
+    },
+  ];
+
   return (
     <motion.section
       id="contact"
@@ -30,11 +33,11 @@ const ContactSection = () => {
       viewport={{ once: true, margin: "-40px" }}
     >
       <div className="section-heading">
-        <h2>Contact</h2>
+        <h2>{t.contact.title}</h2>
       </div>
       <ul className="contact-links">
         {links.map((link) => (
-          <li key={link.label}>
+          <li key={link.href}>
             <a
               href={link.href}
               target={link.href.startsWith("mailto:") ? undefined : "_blank"}
@@ -55,7 +58,7 @@ const ContactSection = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          View LinkedIn Profile
+          {t.contact.cta}
         </a>
       </p>
     </motion.section>

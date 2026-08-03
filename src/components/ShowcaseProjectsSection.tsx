@@ -5,79 +5,100 @@ import projectCrontech from "@/assets/project-crontech.jpg";
 import projectPortfolio from "@/assets/project-portfolio.jpg";
 import projectFreelance from "@/assets/project-freelance.jpg";
 import projectPunekar from "@/assets/project-punekar.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
 
-interface ShowcaseProject {
-  title: string;
-  company?: string;
-  description: string;
-  image: string;
-  tags: string[];
-  link?: string;
-}
-
-const professionalProjects: ShowcaseProject[] = [
+const professionalMeta = [
   {
-    title: "Oil Well Analytics Dashboard",
-    description:
-      "Built responsive dashboards with interactive charts to track alarms, downtime, and historical oil well data. Cut memory usage from 1GB to under 400MB and eliminated 80% of security vulnerabilities.",
+    id: "oil-well",
     image: projectOts,
     tags: ["React", "Charts", "Performance", "Security"],
   },
   {
-    title: "Admin & Trading Platform",
-    company: "Orangebits Software Technologies",
-    description:
-      "Led development of an admin dashboard managing 10,000+ users and tracking over 1 million trades in real-time. Standardized UI components and reduced build times by 10%.",
+    id: "admin-trading",
     image: projectOrangebits,
     tags: ["React", "Real-time", "UI/UX", "ADA"],
   },
   {
-    title: "Crypto Trading & ICO Platform",
-    company: "Crontech LLC",
-    description:
-      "One of the first five engineers — built crypto trading apps with real-time WebSocket updates for 1M+ live connections. Designed secure KYC/payment flows with light/dark theme support.",
+    id: "crypto-trading",
     image: projectCrontech,
     tags: ["WebSocket", "Crypto", "Security", "KYC"],
   },
-];
+] as const;
 
-const personalProjects: ShowcaseProject[] = [
+const personalMeta = [
   {
-    title: "Personal Portfolio Website",
-    description:
-      "Built this portfolio site to explore microfrontends, with plans to integrate Angular and Vue as part of a microfrontend architecture course.",
+    id: "portfolio",
     image: projectPortfolio,
     tags: ["Microfrontends", "React", "Portfolio"],
     link: "https://naveedmadabhavi.com",
   },
   {
-    title: "Freelance Development",
-    company: "Fiverr & Upwork",
-    description:
-      "Earned the Top Rated Seller badge on Fiverr building responsive web applications. Delivered React and Angular solutions with clean code and fast turnaround.",
-    image: projectFreelance,
-    tags: ["Fiverr", "React", "Angular", "Freelance"],
-  },
-  {
-    title: "Being Punekar",
-    company: "Co-founder | 9M+ Followers",
-    description:
-      "Co-founded a social media brand on Facebook & Instagram celebrating Pune's culture, food, and city life, growing to over 9 million followers.",
+    id: "punekar",
     image: projectPunekar,
     tags: ["Social Media", "Branding", "9M+ Followers"],
   },
-];
+  {
+    id: "freelance",
+    image: projectFreelance,
+    tags: ["Fiverr", "React", "Angular", "Freelance"],
+  },
+] as const;
+
+const ShowcaseProjectsSection = () => {
+  const { t } = useLanguage();
+
+  const professionalProjects = professionalMeta.map((meta) => {
+    const copy = t.showcase.professional.find((p) => p.id === meta.id)!;
+    return { ...meta, ...copy };
+  });
+
+  const personalProjects = personalMeta.map((meta) => {
+    const copy = t.showcase.personal.find((p) => p.id === meta.id)!;
+    return { ...meta, ...copy };
+  });
+
+  return (
+    <>
+      <ProjectGroup
+        id="professional"
+        title={t.showcase.professionalTitle}
+        subtitle={t.showcase.professionalSubtitle}
+        projects={professionalProjects}
+        columns={3}
+      />
+      <ProjectGroup
+        id="personal"
+        title={t.showcase.personalTitle}
+        subtitle={t.showcase.personalSubtitle}
+        projects={personalProjects}
+        columns={2}
+      />
+    </>
+  );
+};
+
+type ShowcaseItem = {
+  id: string;
+  title: string;
+  company?: string;
+  description: string;
+  image: string;
+  tags: readonly string[];
+  link?: string;
+};
 
 const ProjectGroup = ({
   id,
   title,
   subtitle,
   projects,
+  columns = 3,
 }: {
   id: string;
   title: string;
   subtitle: string;
-  projects: ShowcaseProject[];
+  projects: ShowcaseItem[];
+  columns?: 2 | 3;
 }) => (
   <motion.section
     id={id}
@@ -93,9 +114,11 @@ const ProjectGroup = ({
         <p className="section-subtitle">{subtitle}</p>
       </div>
     </div>
-    <div className="media-grid">
+    <div
+      className={`media-grid ${columns === 2 ? "media-grid--two" : "media-grid--three"}`}
+    >
       {projects.map((project) => (
-        <article key={project.title} className="media-card">
+        <article key={project.id} className="media-card">
           <img src={project.image} alt={project.title} loading="lazy" />
           <div className="media-card-body">
             {project.company && (
@@ -115,35 +138,18 @@ const ProjectGroup = ({
               )}
             </h3>
             <p>{project.description}</p>
-            <ul className="project-tags" style={{ marginTop: "0.75rem" }}>
-              {project.tags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
+            <div className="media-card-footer">
+              <ul className="project-tags">
+                {project.tags.map((tag) => (
+                  <li key={tag}>{tag}</li>
+                ))}
+              </ul>
+            </div>
           </div>
         </article>
       ))}
     </div>
   </motion.section>
 );
-
-const ShowcaseProjectsSection = () => {
-  return (
-    <>
-      <ProjectGroup
-        id="professional"
-        title="Projects"
-        subtitle="→ some more of the professional kind"
-        projects={professionalProjects}
-      />
-      <ProjectGroup
-        id="personal"
-        title="Projects"
-        subtitle="→ of the personal kind"
-        projects={personalProjects}
-      />
-    </>
-  );
-};
 
 export default ShowcaseProjectsSection;

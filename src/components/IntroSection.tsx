@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import profilePhoto from "@/assets/profile-photo.png";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const IntroSection = () => {
+  const { t } = useLanguage();
+
   return (
     <motion.section
       className="intro"
@@ -17,9 +20,9 @@ const IntroSection = () => {
         height={120}
       />
       <div>
-        <p className="eyebrow">Senior Software Developer</p>
+        <p className="eyebrow">{t.intro.role}</p>
         <h1 className="page-title">Naveed Madabhavi</h1>
-        <p className="tagline">React · Javascript · Vue · Angular </p>
+        <p className="tagline">{t.intro.tagline}</p>
       </div>
     </motion.section>
   );

@@ -2,30 +2,23 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import skyftImg from "@/assets/Skyft.jpg";
 import worldBetImg from "@/assets/world bet.jpg";
+import { useLanguage } from "@/i18n/LanguageContext";
 
-interface ICOProject {
-  name: string;
-  image: string;
-  description: string;
-}
-
-const icoProjects: ICOProject[] = [
-  {
-    name: "SKYFchain",
-    image: skyftImg,
-    description:
-      "Blockchain-based operating platform for cargo robotics — ICO token sale dashboard with multi-language support",
-  },
-  {
-    name: "WorldBet",
-    image: worldBetImg,
-    description:
-      "Blockchain-based betting platform with cryptocurrency payments and real-time sports event betting",
-  },
-];
+const icoMeta = [
+  { id: "skyf", image: skyftImg },
+  { id: "worldbet", image: worldBetImg },
+] as const;
 
 const IcoPlatformsSection = () => {
-  const [selected, setSelected] = useState<ICOProject | null>(null);
+  const { t } = useLanguage();
+  const [selectedId, setSelectedId] = useState<string | null>(null);
+
+  const icoProjects = icoMeta.map((meta) => {
+    const copy = t.ico.items.find((p) => p.id === meta.id)!;
+    return { ...meta, ...copy };
+  });
+
+  const selected = icoProjects.find((p) => p.id === selectedId) ?? null;
 
   return (
     <motion.section
@@ -38,21 +31,19 @@ const IcoPlatformsSection = () => {
     >
       <div className="section-heading">
         <div>
-          <h2>ICO Platforms</h2>
-          <p className="section-subtitle">
-            Crypto ICO platforms I built back in 2018
-          </p>
+          <h2>{t.ico.title}</h2>
+          <p className="section-subtitle">{t.ico.subtitle}</p>
         </div>
       </div>
 
       <div className="media-grid">
         {icoProjects.map((project) => (
-          <article key={project.name} className="media-card">
+          <article key={project.id} className="media-card">
             <button
               type="button"
               className="media-card-trigger"
-              onClick={() => setSelected(project)}
-              aria-label={`View larger image of ${project.name}`}
+              onClick={() => setSelectedId(project.id)}
+              aria-label={t.ico.viewLarger.replace("{name}", project.name)}
             >
               <img src={project.image} alt={project.name} loading="lazy" />
               <div className="media-card-body">
@@ -71,7 +62,7 @@ const IcoPlatformsSection = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelected(null)}
+            onClick={() => setSelectedId(null)}
             role="dialog"
             aria-modal="true"
             aria-label={selected.name}
@@ -86,8 +77,8 @@ const IcoPlatformsSection = () => {
               <button
                 type="button"
                 className="lightbox-close"
-                onClick={() => setSelected(null)}
-                aria-label="Close"
+                onClick={() => setSelectedId(null)}
+                aria-label={t.ico.close}
               >
                 ×
               </button>

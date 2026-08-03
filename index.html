@@ -10,12 +10,17 @@
     />
     <meta name="author" content="Naveed Madabhavi" />
     <script>
-      // Runs before first paint to avoid a flash of the wrong theme.
+      // Runs before first paint to avoid a flash of the wrong theme/locale.
       (function () {
         try {
           var pref = localStorage.getItem("theme-preference");
           if (pref === "light" || pref === "dark") {
             document.documentElement.setAttribute("data-theme", pref);
+          }
+          var locale = localStorage.getItem("locale-preference");
+          if (locale === "en" || locale === "de" || locale === "ar") {
+            document.documentElement.lang = locale;
+            document.documentElement.dir = locale === "ar" ? "rtl" : "ltr";
           }
         } catch (e) {}
       })();

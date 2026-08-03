@@ -45,20 +45,20 @@ const personalProjects = [
     link: "https://naveedmadabhavi.com",
   },
   {
-    title: "Freelance Development",
-    company: "Fiverr & Upwork",
-    description:
-      "Earned the Top Rated Seller badge on Fiverr building responsive web applications. Delivered React and Angular solutions with clean code and fast turnaround.",
-    image: projectFreelance,
-    tags: ["Fiverr", "React", "Angular", "Freelance"],
-  },
-  {
     title: "Being Punekar",
     company: "Co-founder | 9M+ Followers",
     description:
       "Co-founded a social media brand on Facebook & Instagram celebrating Pune's culture, food, and city life, growing to over 9 million followers.",
     image: projectPunekar,
     tags: ["Social Media", "Branding", "9M+ Followers"],
+  },
+  {
+    title: "Freelance Development",
+    company: "Fiverr & Upwork",
+    description:
+      "Worked as a freelance web developer on Fiverr and Upwork, earning the Top Rated Seller badge on Fiverr & upwork by consistently delivering high-quality, responsive web applications using React and Angular. Successfully collaborated with clients worldwide, delivering clean, maintainable code with quick turnaround times. During the COVID-19 pandemic, also helped friends set up and optimize their Upwork profiles, wrote and submitted job proposals on their behalf, and supported them in securing remote freelance opportunities.",
+    image: projectFreelance,
+    tags: ["Fiverr", "React", "Angular", "Freelance"],
   },
 ];
 

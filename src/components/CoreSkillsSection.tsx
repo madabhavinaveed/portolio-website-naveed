@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const skills = [
   "JavaScript",
@@ -28,6 +29,8 @@ const skills = [
 ];
 
 const CoreSkillsSection = () => {
+  const { t } = useLanguage();
+
   return (
     <motion.section
       id="skills"
@@ -38,7 +41,7 @@ const CoreSkillsSection = () => {
       viewport={{ once: true, margin: "-40px" }}
     >
       <div className="section-heading">
-        <h2>Core skills</h2>
+        <h2>{t.skills.title}</h2>
       </div>
       <ul className="skill-list">
         {skills.map((skill) => (
